@@ -10,8 +10,9 @@ function WorkExperienceSection({ experiences }: WorkExperienceSectionProps) {
   const sortedExperiences = experiences.sort(
     (a, b) => new Date(b.dateStarted).getTime() - new Date(a.dateStarted).getTime()
   );
+
   return (
-    <section className="h-screen snap-start flex-col pt-16 md:pt-24" id="experience">
+    <section className="mb-2 h-screen snap-start flex-col pt-16 md:pt-24" id="experience">
       <motion.div
         className="mx-auto flex h-full max-w-7xl flex-col overflow-hidden px-5 md:px-10"
         initial={{ opacity: 0 }}
