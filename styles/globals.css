@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    color: #f2f2f2;
+  }
+}
+
+@layer components {
+  .app-scroll {
+    @apply scrollbar scrollbar-thin scrollbar-thumb-[#4e4e4e4e]/100 hover:scrollbar-thumb-[#4e4e4e4e]/60;
+  }
+  .contact-input {
+    @apply rounded-sm border-b border-[#242424] bg-slate-500/10 px-6 py-4 text-gray-500 placeholder-gray-500 outline-none transition-all focus:border-red-500/40 focus:text-[#f7ab0a]/40 hover:border-[#F7ab0a]/40;
+  }
+
+  .button-hero {
+    @apply rounded-full border-[#242424] px-6 py-2 text-sm uppercase tracking-widest text-gray-500 transition-all hover:border-[#F7ab0a]/40 hover:text-[#f7ab0a]/40;
+  }
+}
