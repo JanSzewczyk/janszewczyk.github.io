@@ -10,7 +10,7 @@ function AboutSection({ pageInfo }: AboutSectionProps) {
   return (
     <section className="min-h-screen snap-start" id="about">
       <motion.div
-        className="mx-auto flex  max-w-7xl flex-col overflow-hidden px-10 pb-12 pt-24 text-center lg:text-left"
+        className="mx-auto flex max-w-7xl flex-col px-10 pb-12 pt-24 text-center lg:text-left"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}

@@ -18,6 +18,6 @@
   }
 
   .button-hero {
-    @apply rounded-full border-[#242424] px-6 py-2 text-sm uppercase tracking-widest text-gray-500 transition-all hover:border-[#F7ab0a]/40 hover:text-[#f7ab0a]/40;
+    @apply rounded-full border-[#242424] px-4 py-2 text-sm uppercase tracking-widest text-gray-500 transition-all hover:border-[#F7ab0a]/40 hover:text-[#f7ab0a]/40 md:px-6;
   }
 }
