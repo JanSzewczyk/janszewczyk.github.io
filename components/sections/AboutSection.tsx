@@ -8,7 +8,7 @@ interface AboutSectionProps {
 
 function AboutSection({ pageInfo }: AboutSectionProps) {
   return (
-    <section className="min-h-screen snap-start py-12 md:pt-24" id="about">
+    <section className="min-h-screen snap-start pt-16 md:pt-24" id="about">
       <motion.div
         className="mx-auto flex max-w-7xl flex-col px-10 text-center lg:text-left"
         initial={{ opacity: 0 }}
