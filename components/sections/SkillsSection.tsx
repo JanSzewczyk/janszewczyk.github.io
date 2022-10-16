@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Skill } from "@types";
 import SkillItem from "@components/SkillItem";
+import React from "react";
 
 interface SkillsSectionProps {
   skills: Skill[];
@@ -8,9 +9,9 @@ interface SkillsSectionProps {
 
 function SkillsSection({ skills }: SkillsSectionProps) {
   return (
-    <section className="min-h-screen snap-start px-10 pt-24 pb-12" id="skills">
+    <section className="flex min-h-screen snap-start pt-16 pb-12 md:pt-24" id="skills">
       <motion.div
-        className="flex h-full flex-col items-center overflow-hidden"
+        className="mx-auto max-w-7xl flex-col items-center overflow-hidden px-5 md:px-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
@@ -19,14 +20,13 @@ function SkillsSection({ skills }: SkillsSectionProps) {
           Skills
         </h3>
         <h4 className="mt-4 text-center uppercase tracking-1 text-gray-500">
-          Hover over a skill for currency profieciency
+          Hover over a skill for currency proficiency
         </h4>
 
-        {/* TODO flex row wrap */}
-        <div className="mt-24 flex flex-1 items-center">
-          <div className="grid grid-cols-4 gap-5">
-            {skills.map((skill) => (
-              <SkillItem skill={skill} key={skill._id} />
+        <div className="mt-24">
+          <div className="flex max-w-2xl flex-wrap items-center justify-center gap-8">
+            {skills.map((skill, index) => (
+              <SkillItem skill={skill} index={index} key={skill._id} />
             ))}
           </div>
         </div>
