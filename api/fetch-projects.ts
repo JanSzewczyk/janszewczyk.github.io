@@ -1,8 +1,14 @@
 import { Project } from "@types";
+import { groq } from "next-sanity";
+import { sanityClient } from "../sanity";
+
+const query = groq`
+  *[_type == "project"] {
+    ...,
+    technologies[]->
+  }
+`;
 
 export async function fetchProjects(): Promise<Project[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/get-projects`);
-  const data = await res.json();
-
-  return data.projects;
+  return await sanityClient.fetch<Project[]>(query);
 }

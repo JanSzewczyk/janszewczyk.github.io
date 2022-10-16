@@ -1,8 +1,11 @@
 import { PageInfo } from "@types";
+import { groq } from "next-sanity";
+import { sanityClient } from "../sanity";
+
+const query = groq`
+  *[_type == "pageInfo"][0]
+`;
 
 export async function fetchPageInfo(): Promise<PageInfo> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/get-page-info`);
-  const data = await res.json();
-
-  return data.pageInfo;
+  return await sanityClient.fetch<PageInfo>(query);
 }
