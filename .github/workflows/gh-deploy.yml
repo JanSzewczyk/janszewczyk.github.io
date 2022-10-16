@@ -49,6 +49,7 @@ jobs:
 
       - name: Run dev
         run: yarn dev
+        timeout-minutes: 1
 
       - name: Build with Next.js
         run: yarn next build
