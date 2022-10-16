@@ -5,7 +5,7 @@ export default {
   fields: [
     {
       name: "jobTitle",
-      title: "JobTitle",
+      title: "Job Title",
       type: "string",
       validation: (Rule) => Rule.required()
     },
@@ -39,6 +39,7 @@ export default {
       name: "isCurrentlyWorkingHere",
       title: "Is Currently Working Here",
       type: "boolean",
+      initialValue: false,
       validation: (Rule) => Rule.required()
     },
     {
