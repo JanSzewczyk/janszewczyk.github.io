@@ -1,0 +1,62 @@
+name: GH Deploy 🚀
+
+on:
+  workflow_run:
+    workflows: ["Release 🚀"]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: GH Page Deploy
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [16.x]
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Checkout code 📚
+        uses: actions/checkout@v3
+
+      - name: Set up Node 🟢
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+        with:
+          # Automatically inject basePath in your Next.js configuration file and disable
+          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+          #
+          # You may remove this line if you want to manage the configuration yourself.
+          static_site_generator: next
+
+      - name: Install packages ⚙️
+        run: yarn install --frozen-lockfile
+
+      - name: Run dev
+        run: yarn dev
+
+      - name: Build with Next.js
+        run: yarn next build
+
+      - name: Static HTML export with Next.js
+        run: yarn next export
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./out
