@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Skill } from "@types";
 import SkillItem from "@components/SkillItem";
 import React from "react";
+import SectionTitle from "@components/SectionTitle";
 
 interface SkillsSectionProps {
   skills: Skill[];
@@ -16,12 +17,7 @@ function SkillsSection({ skills }: SkillsSectionProps) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h3 className="text-center text-2xl uppercase tracking-2 text-gray-500 md:tracking-8">
-          Skills
-        </h3>
-        <h4 className="mt-4 text-center uppercase tracking-1 text-gray-500">
-          Hover over a skill for currency proficiency
-        </h4>
+        <SectionTitle subTitle="Hover over a skill for currency proficiency" title="Skills" />
 
         <div className="mt-24">
           <div className="flex max-w-2xl flex-wrap items-center justify-center gap-8">

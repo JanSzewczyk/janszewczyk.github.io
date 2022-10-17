@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ExperienceCard from "@components/ExperienceCard";
 import { Experience } from "@types";
+import SectionTitle from "@components/SectionTitle";
 
 interface WorkExperienceSectionProps {
   experiences: Experience[];
@@ -19,10 +20,9 @@ function WorkExperienceSection({ experiences }: WorkExperienceSectionProps) {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h3 className="mb-10 text-center text-2xl uppercase tracking-2 text-gray-500 md:mb-24 md:tracking-8 ">
-          Experience
-        </h3>
+        <SectionTitle title="Experience" />
 
+        {/* TODO Fix snapping*/}
         <div className="app-scroll flex flex-1 overflow-x-auto py-10">
           <div className=" mx-auto flex snap-x snap-mandatory flex-row gap-x-6  ">
             {sortedExperiences.map((experience) => (

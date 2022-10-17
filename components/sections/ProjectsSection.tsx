@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Project } from "@types";
 import { urlFor } from "../../sanity";
+import SectionTitle from "@components/SectionTitle";
+import React from "react";
 
 interface ProjectsSectionProps {
   projects: Project[];
@@ -15,11 +17,9 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
         transition={{ duration: 1.5 }}
         className="relative flex h-full flex-col"
       >
-        <h3 className=" text-center text-2xl uppercase tracking-2 text-gray-500 md:tracking-8">
-          Skills
-        </h3>
+        <SectionTitle title="Skills" />
 
-        <div className="relative z-20 flex w-full flex-1 snap-x snap-mandatory overflow-y-hidden overflow-x-scroll">
+        <div className="app-scroll relative z-20 flex w-full flex-1 snap-x snap-mandatory overflow-y-hidden overflow-x-scroll">
           {projects.map((project, index) => (
             <div
               className="msx-h-full flex w-screen flex-shrink-0 snap-center flex-col items-center justify-center gap-5 p-20 md:p-24"
@@ -42,7 +42,7 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
                   {project.title}
                 </h4>
 
-                <div className="overflow-x-auto text-center md:text-left md:text-lg">
+                <div className="app-scroll overflow-x-auto text-center md:text-left md:text-lg">
                   <p>{project.summary}</p>
                 </div>
               </div>
