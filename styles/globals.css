@@ -31,11 +31,16 @@ body {
   .app-scroll {
     @apply scrollbar scrollbar-thin scrollbar-thumb-gray-200/100 hover:scrollbar-thumb-gray-200/60;
   }
+
   .contact-input {
     @apply rounded-sm border-b border-[#242424] bg-slate-500/10 px-6 py-4 text-gray-500 placeholder-gray-500 outline-none transition-all focus:border-red-500/40 focus:text-[#f7ab0a]/40 hover:border-[#F7ab0a]/40;
   }
 
   .button-hero {
     @apply rounded border border-gray-900 px-4 py-2 text-sm uppercase tracking-widest text-gray transition-all hover:border-primary/40 hover:text-primary md:px-6;
+  }
+
+  .project-item-width {
+    @apply w-[calc(100vw-3rem)] md:w-[calc(100vw-5.5rem)] xl:w-300;
   }
 }
