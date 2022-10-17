@@ -33,7 +33,7 @@ body {
   }
 
   .contact-input {
-    @apply rounded-sm border-b border-[#242424] bg-slate-500/10 px-6 py-4 text-gray-500 placeholder-gray-500 outline-none transition-all focus:border-red-500/40 focus:text-[#f7ab0a]/40 hover:border-[#F7ab0a]/40;
+    @apply w-full rounded-sm border-b border-[#242424] bg-slate-500/10 px-6 py-4 text-gray-500 placeholder-gray-500 outline-none transition-all focus:border-red-500/40 focus:text-[#f7ab0a]/40 hover:border-[#F7ab0a]/40;
   }
 
   .button-hero {

@@ -1,0 +1,18 @@
+import { version } from "../package.json";
+
+interface FooterProps {}
+
+function Footer({}: FooterProps) {
+  return (
+    <footer className="mx-auto w-full max-w-7xl px-5 md:px-10">
+      <div className="flex flex-col justify-between border-t border-t-gray-300 py-6 px-4 sm:flex-row md:px-8">
+        <p className="text-lg text-gray-100 ">
+          Copyright {new Date().getFullYear()} Szum-Tech, Inc. All rights reserved.
+        </p>
+        <p className="mt-2 text-sm text-gray-200 sm:mt-0">v{version}</p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;

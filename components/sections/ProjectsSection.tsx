@@ -10,10 +10,7 @@ interface ProjectsSectionProps {
 
 function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
-    <section
-      className="relative flex h-screen snap-start overflow-x-auto pt-16 md:pt-24"
-      id="projects"
-    >
+    <section className="relative flex h-screen snap-start pt-16 md:pt-24" id="projects">
       <div className="absolute left-0 top-[20%] z-0 h-[500px] w-full -skew-y-12 bg-primary/10" />
 
       <motion.div
@@ -37,5 +34,3 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
 }
 
 export default ProjectsSection;
-
-// Copyright 2022 Szum-Tech, Inc. All rights reserved. -> v1.2.3

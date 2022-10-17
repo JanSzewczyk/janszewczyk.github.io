@@ -1,5 +1,7 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { useForm } from "react-hook-form";
+import SectionTitle from "@components/SectionTitle";
+import Footer from "@components/Footer";
 
 interface ContactFormType {
   name: string;
@@ -18,11 +20,12 @@ function ContactSection({}: ContactSectionProps) {
   }
 
   return (
-    <section className="h-screen snap-start pt-24" id="contact">
-      <div className="mx-auto flex max-w-7xl flex-col items-center ">
-        <h3 className="mb-24 text-center text-2xl uppercase tracking-2 text-gray-500 md:tracking-8">
-          Contact
-        </h3>
+    <section
+      className="flex min-h-screen snap-start flex-col justify-between pt-16 md:pt-24"
+      id="contact"
+    >
+      <div className="mx-auto flex max-w-7xl flex-1 flex-col px-5 pb-24 md:px-10">
+        <SectionTitle title="Contact" />
 
         <div className="flex flex-col gap-10">
           <h4 className="text-center text-4xl font-semibold">
@@ -41,8 +44,8 @@ function ContactSection({}: ContactSectionProps) {
             </div>
           </div>
 
-          <form className="mx-auto flex w-fit flex-col gap-2">
-            <div className="flex gap-2">
+          <form className="mx-auto flex max-w-md flex-col gap-2">
+            <div className="flex flex-col gap-2 md:flex-row">
               <input
                 type="text"
                 placeholder="Name"
@@ -76,6 +79,8 @@ function ContactSection({}: ContactSectionProps) {
           </form>
         </div>
       </div>
+
+      <Footer />
     </section>
   );
 }

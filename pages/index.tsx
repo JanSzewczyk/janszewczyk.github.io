@@ -33,7 +33,7 @@ function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
       <SkillsSection skills={skills} />
       <ProjectsSection projects={projects} />
 
-      {/*<ContactSection />*/}
+      <ContactSection />
     </main>
   );
 }
