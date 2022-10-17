@@ -9,7 +9,7 @@ interface SkillsSectionProps {
 
 function SkillsSection({ skills }: SkillsSectionProps) {
   return (
-    <section className="flex min-h-screen snap-start pt-16 pb-12 md:pt-24" id="skills">
+    <section className="flex min-h-screen snap-start pt-16 pb-24 sm:pb-12 md:pt-24" id="skills">
       <motion.div
         className="mx-auto max-w-7xl flex-col items-center overflow-hidden px-5 md:px-10"
         initial={{ opacity: 0 }}

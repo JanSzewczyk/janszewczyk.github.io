@@ -20,7 +20,7 @@ interface HomeProps {
 
 function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
   return (
-    <div className="app-scroll app-scroll z-0 h-screen snap-y snap-mandatory bg-[rgb(36,36,36)] text-white">
+    <main className="app-scroll app-scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto bg-gray-900">
       <Head>
         <title>Jan Szewczyk`s portfolio</title>
       </Head>
@@ -34,7 +34,7 @@ function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
       <ProjectsSection projects={projects} />
 
       {/*<ContactSection />*/}
-    </div>
+    </main>
   );
 }
 

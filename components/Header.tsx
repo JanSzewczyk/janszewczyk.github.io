@@ -27,7 +27,12 @@ function Header({ socials }: HeaderProps) {
         className="flex flex-row items-center"
       >
         {socials.map((social) => (
-          <SocialIcon url={social.url} key={social._id} fgColor="grey" bgColor="transparent" />
+          <SocialIcon
+            url={social.url}
+            key={social._id}
+            fgColor="rgb(var(--gray-100))"
+            bgColor="transparent"
+          />
         ))}
       </motion.div>
 
@@ -46,15 +51,15 @@ function Header({ socials }: HeaderProps) {
           transition={{
             duration: 1.5
           }}
-          className="flex cursor-pointer flex-row items-center text-gray-300"
+          className="flex cursor-pointer flex-row items-center text-gray-100"
         >
           <SocialIcon
             network="email"
             className="cursor-pointer"
-            fgColor="grey"
+            fgColor="rgb(var(--gray-100))"
             bgColor="transparent"
           />
-          <p className="hidden text-sm uppercase text-gray-400 md:inline-flex">Get In Touch</p>
+          <p className="hidden text-sm uppercase md:inline-flex">Get In Touch</p>
         </motion.div>
       </Link>
     </header>

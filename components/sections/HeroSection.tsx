@@ -16,7 +16,7 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
   });
 
   return (
-    <section id="hero" className="mb-2 h-screen snap-center">
+    <section id="hero" className="h-screen snap-center">
       <div className="relative flex h-full flex-col items-center justify-center overflow-hidden text-center">
         <BackgroundCircles />
 
@@ -24,19 +24,19 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
           <div className="absolute -bottom-4">
             <img
               alt=""
-              className="relative mx-auto mb-6 h-32 w-32 rounded-3xl object-cover"
+              className="relative mx-auto mb-6 h-32 w-32 rounded object-cover"
               src={urlFor(pageInfo.heroImage).url()}
             />
-            <h2 className="text-sm uppercase tracking-2 text-gray-500">{pageInfo.role}</h2>
+            <h2 className="text-sm uppercase tracking-2 text-gray-100">{pageInfo.role}</h2>
           </div>
 
           <h1 className="absolute top-8 max-w-3xl px-8 text-5xl font-semibold lg:text-6xl">
             <span>{text}</span>
-            <Cursor cursorColor="blue" />
+            <Cursor cursorColor="rgb(var(--primary))" />
           </h1>
         </div>
 
-        <div className="absolute bottom-2">
+        <div className="absolute bottom-8 sm:bottom-2">
           <Link href="#about">
             <button className="button-hero">About</button>
           </Link>

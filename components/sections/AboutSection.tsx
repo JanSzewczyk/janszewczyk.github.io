@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { PageInfo } from "@types";
 import { urlFor } from "../../sanity";
+import SectionTitle from "@components/SectionTitle";
 
 interface AboutSectionProps {
   pageInfo: PageInfo;
@@ -8,20 +9,18 @@ interface AboutSectionProps {
 
 function AboutSection({ pageInfo }: AboutSectionProps) {
   return (
-    <section className="min-h-screen snap-start pt-16 md:pt-24" id="about">
+    <section className="min-h-screen snap-start pt-16 pb-24 md:pt-24" id="about">
       <motion.div
-        className="mx-auto flex max-w-7xl flex-col px-10 text-center lg:text-left"
+        className="mx-auto flex max-w-7xl flex-col px-5 text-center md:px-10 lg:text-left"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h3 className="mb-10 text-center text-2xl uppercase tracking-2 text-gray-500 md:mb-24 md:tracking-8">
-          About
-        </h3>
+        <SectionTitle title="About" />
 
         <div className="flex flex-col items-center lg:flex-row lg:items-start">
           <motion.img
-            className="md:w-94 mb-10 h-56 w-56 flex-shrink-0 rounded-full object-cover md:rounded-lg lg:mb-0 lg:h-64 xl:h-[600px] xl:w-[500px]"
+            className="md:w-94 mb-10 h-56 w-56 flex-shrink-0 rounded object-cover lg:mb-0 lg:h-64 xl:h-[600px] xl:w-[500px]"
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.2 }}
@@ -33,7 +32,7 @@ function AboutSection({ pageInfo }: AboutSectionProps) {
             <h4 className="mb-8 text-4xl font-semibold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
             </h4>
-            <p className="mb-12 text-lg">{pageInfo.backgroundInformation}</p>
+            <p className="text-lg">{pageInfo.backgroundInformation}</p>
           </div>
         </div>
       </motion.div>
