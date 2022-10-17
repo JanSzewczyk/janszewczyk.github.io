@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.0...v1.1.1) (2022-10-17)
+
+
+### Bug Fixes
+
+* fix `Contact` section styles ([9c7a0d8](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/9c7a0d837db13508ef56297019b0feb8ff88256b))
+* fix `experience` section scroll behaviour ([de28824](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/de28824855e9b401a10c2896e8bd5e613b0775cd))
+* fix `Projects` section styles ([6362da2](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/6362da2a46d0add3355cb47190ef3c5528ac67ee))
+
 # [1.1.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.0.2...v1.1.0) (2022-10-17)
 
 
