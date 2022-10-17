@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.0.2...v1.1.0) (2022-10-17)
+
+
+### Bug Fixes
+
+* sections title ([0f9dd4e](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/0f9dd4e5043ec6e1140dd62e8a18afae72afd4d6))
+
+
+### Features
+
+* add theming ([aecd8f1](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/aecd8f1ac5793fc455d02d7a2ac8b8c1115d007a))
+
 ## [1.0.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.0.1...v1.0.2) (2022-10-16)
 
 
