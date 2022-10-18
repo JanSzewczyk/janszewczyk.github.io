@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.2...v1.1.3) (2022-10-18)
+
+
+### Bug Fixes
+
+* fix font family link ([134e38e](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/134e38e13ef1ffebae1bd785b4d39115571cf3cd))
+
 ## [1.1.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.1...v1.1.2) (2022-10-18)
 
 
