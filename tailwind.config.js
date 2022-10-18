@@ -6,6 +6,9 @@ module.exports = {
       sans: ["'Open Sans', sans-serif"]
     },
     extend: {
+      fontFamily: {
+        code: ["'JetBrains Mono', monospace"]
+      },
       width: {
         128: "32.0rem",
         300: "75.0rem"

@@ -12,4 +12,11 @@ export interface PageInfo extends SanityBody {
   phoneNumber: string;
   profilePic: Image;
   role: string;
+  typings: TypingItem[];
+}
+
+export interface TypingItem {
+  _key: string;
+  asCode: boolean;
+  content: string;
 }

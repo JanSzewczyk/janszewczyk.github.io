@@ -4,6 +4,14 @@ export default {
   type: "document",
   fields: [
     {
+      name: "heroImage",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true
+      }
+    },
+    {
       name: "name",
       title: "Name",
       type: "string"
@@ -14,13 +22,20 @@ export default {
       type: "string"
     },
     {
-      name: "heroImage",
-      title: "Image",
-      type: "image",
-      options: {
-        hotspot: true
-      }
+      name: "typings",
+      title: "Typings",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            { name: "content", type: "string", title: "Typed Content" },
+            { name: "asCode", type: "boolean", title: "As Code", initialValue: false }
+          ]
+        }
+      ]
     },
+
     {
       name: "backgroundInformation",
       title: "BackgroundInformation",

@@ -19,6 +19,8 @@ interface HomeProps {
 }
 
 function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
+  console.log(pageInfo);
+
   return (
     <main className="app-scroll app-scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto bg-gray-900">
       <Head>
