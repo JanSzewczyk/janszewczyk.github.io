@@ -1,4 +1,4 @@
-import { version } from "../package.json";
+import projectInfo from "../package.json";
 
 interface FooterProps {}
 
@@ -9,7 +9,7 @@ function Footer({}: FooterProps) {
         <p className="text-lg text-gray-100 ">
           Copyright {new Date().getFullYear()} Szum-Tech, Inc. All rights reserved.
         </p>
-        <p className="mt-2 text-sm text-gray-200 sm:mt-0">v{version}</p>
+        <p className="mt-2 text-sm text-gray-200 sm:mt-0">v{projectInfo.version}</p>
       </div>
     </footer>
   );
