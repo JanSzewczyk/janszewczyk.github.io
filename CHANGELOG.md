@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.3...v1.2.0) (2022-10-18)
+
+
+### Features
+
+* improve typing animation and mechanism ([ca4c67b](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/ca4c67b1653e992ddc5fb598319b39310927a6c9))
+
 ## [1.1.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.2...v1.1.3) (2022-10-18)
 
 
