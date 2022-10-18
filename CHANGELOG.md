@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.1...v1.1.2) (2022-10-18)
+
+
+### Bug Fixes
+
+* change font family ([bc091d6](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/bc091d62b730da8348f4a4077a57d6d059542361))
+
 ## [1.1.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.0...v1.1.1) (2022-10-17)
 
 
