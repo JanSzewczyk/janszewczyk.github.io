@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.3...v1.2.4) (2022-10-20)
+
+
+### Bug Fixes
+
+* remove incorrect letter ([86ace03](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/86ace036a7e44ca1675ff01348e819f9cefb9fce))
+
 ## [1.2.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.2...v1.2.3) (2022-10-20)
 
 
