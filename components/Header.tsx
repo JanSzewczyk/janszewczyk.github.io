@@ -28,6 +28,7 @@ function Header({ socials }: HeaderProps) {
       >
         {socials.map((social) => (
           <SocialIcon
+            aria-label={social.title}
             url={social.url}
             key={social._id}
             fgColor="rgb(var(--gray-100))"
@@ -36,7 +37,7 @@ function Header({ socials }: HeaderProps) {
         ))}
       </motion.div>
 
-      <Link href="#contact">
+      <Link href={{ hash: "contact" }} aria-label="Link To Contact">
         <motion.div
           initial={{
             x: 500,

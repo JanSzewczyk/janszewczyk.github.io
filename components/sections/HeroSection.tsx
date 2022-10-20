@@ -22,7 +22,6 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
     <section id="hero" className="h-screen snap-center">
       <div className="relative flex h-full flex-col items-center justify-center overflow-hidden text-center">
         <BackgroundCircles />
-
         <div className="relative flex w-full flex-col items-center justify-center">
           <div className="absolute -bottom-4">
             <img
@@ -42,21 +41,21 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
             <Cursor cursorColor="rgb(var(--primary))" />
           </h1>
         </div>
-
         <div className="absolute bottom-8 sm:bottom-2">
-          <Link href="#about">
+          <Link href={{ hash: "about" }}>
             <button className="button-hero">About</button>
           </Link>
-          <Link href="#experience">
+          <Link href={{ hash: "experience" }}>
             <button className="button-hero">Experience</button>
           </Link>
-          <Link href="#skills">
+          <Link href={{ hash: "skills" }}>
             <button className="button-hero">Skills</button>
           </Link>
-          <Link href="#projects">
+          <Link href={{ hash: "projects" }}>
             <button className="button-hero">Projects</button>
           </Link>
         </div>
+        s
       </div>
     </section>
   );
