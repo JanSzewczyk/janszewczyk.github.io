@@ -11,7 +11,7 @@ interface ProjectsSectionProps {
 function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section className="relative flex h-screen snap-start pt-16 md:pt-24" id="projects">
-      <div className="absolute left-0 top-[20%] z-0 h-[500px] w-full -skew-y-12 bg-primary/10" />
+      <div className="absolute left-0 top-[20%] z-0 h-1/2 w-full -skew-y-12 bg-primary/10" />
 
       <motion.div
         initial={{ opacity: 0 }}
