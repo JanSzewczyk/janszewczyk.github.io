@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.1...v1.2.2) (2022-10-20)
+
+
+### Bug Fixes
+
+* fix `ExperienceCard` styles ([9416659](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/94166595d2caa6497b74603f05a4b3e4036981e6))
+* fix `SkillItem` responsiveness size ([a71b735](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/a71b735dad0cd5d3a4d7997b14c08a2507e5a958))
+* fix `SkillsSection` spacings styles ([b6a12fb](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/b6a12fb43cff0fd5e2947decc1227ed84a4c5ead))
+
 ## [1.2.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.0...v1.2.1) (2022-10-20)
 
 
