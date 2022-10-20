@@ -16,13 +16,13 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   }
 
   return (
-    <article className="flex cursor-pointer snap-center flex-col items-center bg-[#292929] p-4 opacity-60 transition-opacity duration-200 hover:opacity-100 sm:w-96 md:p-10">
+    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center rounded bg-gray-700 p-4 opacity-60 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 lg:p-10">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="mb-7 h-32 w-32 rounded-full object-cover object-center"
+        className="mb-7 h-32 w-32 rounded object-cover object-center"
         src={urlFor(experience.companyImage).url()}
       />
 
@@ -40,7 +40,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
           ))}
         </div>
 
-        <p className="py-5 uppercase text-gray-500">
+        <p className="py-5 font-semibold uppercase text-gray-100">
           {formatDate(experience.dateStarted)} -{" "}
           {!experience.isCurrentlyWorkingHere && experience.dateEnded
             ? formatDate(experience.dateEnded)

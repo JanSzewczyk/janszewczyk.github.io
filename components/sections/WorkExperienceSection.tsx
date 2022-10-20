@@ -22,7 +22,7 @@ function WorkExperienceSection({ experiences }: WorkExperienceSectionProps) {
       >
         <SectionTitle title="Experience" />
 
-        <div className="app-scroll flex flex-1 snap-x snap-proximity overflow-x-auto py-10">
+        <div className="app-scroll flex flex-1 snap-x snap-mandatory overflow-x-auto pb-5 md:snap-proximity md:pb-10 lg:py-10">
           <div className="mx-auto flex flex-row gap-x-6">
             {sortedExperiences.map((experience) => (
               <ExperienceCard key={experience._id} experience={experience} />
