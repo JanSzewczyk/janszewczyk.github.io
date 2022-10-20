@@ -55,7 +55,6 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
             <button className="button-hero">Projects</button>
           </Link>
         </div>
-        s
       </div>
     </section>
   );
