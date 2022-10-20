@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.0...v1.2.1) (2022-10-20)
+
+
+### Bug Fixes
+
+* fix `ProjectsSection` background strip ([e2efa25](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/e2efa25bb1f91fe6a64c915c6fa2071c8cabc9a8))
+* remove `console.log` ([24b62d3](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/24b62d32bc6a0e5996b8c11ed84ea3b45a97cadf))
+
 # [1.2.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.1.3...v1.2.0) (2022-10-18)
 
 
