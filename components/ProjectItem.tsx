@@ -9,7 +9,7 @@ interface ProjectItemProps {
 
 function ProjectItem({ project }: ProjectItemProps) {
   return (
-    <div className="project-item-width flex flex-1 snap-center flex-col items-center">
+    <div className="project-item-width flex w-[calc(100vw-3rem)] flex-1 snap-center flex-col items-center md:w-[calc(100vw-5.5rem)] xl:w-300">
       <motion.img
         initial={{ opacity: 0, y: -200 }}
         whileInView={{ opacity: 1, y: 0 }}

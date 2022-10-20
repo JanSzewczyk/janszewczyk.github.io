@@ -45,8 +45,4 @@
     @apply rounded border border-transparent px-4 py-2 text-sm uppercase tracking-widest text-gray transition-all
     hover:border-primary/40 hover:bg-gray-900/50 hover:text-primary md:px-6;
   }
-
-  .project-item-width {
-    @apply w-[calc(100vw-3rem)] md:w-[calc(100vw-5.5rem)] xl:w-300;
-  }
 }
