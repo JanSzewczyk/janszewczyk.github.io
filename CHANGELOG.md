@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.2...v1.2.3) (2022-10-20)
+
+
+### Performance Improvements
+
+* update app accessibility ([695d74e](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/695d74e272887becb40189bc99d86e90560fc7a4))
+
 ## [1.2.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.1...v1.2.2) (2022-10-20)
 
 
