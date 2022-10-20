@@ -19,12 +19,10 @@ function SkillsSection({ skills }: SkillsSectionProps) {
       >
         <SectionTitle subTitle="Hover over a skill for currency proficiency" title="Skills" />
 
-        <div className="mt-24">
-          <div className="flex max-w-2xl flex-wrap items-center justify-center gap-8">
-            {skills.map((skill, index) => (
-              <SkillItem skill={skill} index={index} key={skill._id} />
-            ))}
-          </div>
+        <div className="flex max-w-2xl flex-wrap items-center justify-center gap-8">
+          {skills.map((skill, index) => (
+            <SkillItem skill={skill} index={index} key={skill._id} />
+          ))}
         </div>
       </motion.div>
     </section>
