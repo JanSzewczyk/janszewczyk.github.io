@@ -20,7 +20,7 @@ interface HomeProps {
 
 function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
   return (
-    <main className="app-scroll app-scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto bg-gray-900">
+    <main className="app-scroll app-scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto bg-gray-900 ">
       <Head>
         <title>Jan Szewczyk`s portfolio</title>
       </Head>

@@ -25,11 +25,11 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
         <div className="relative flex w-full flex-col items-center justify-center">
           <div className="absolute -bottom-4">
             <img
-              alt=""
+              alt="Hero Picture"
               className="relative mx-auto mb-6 h-32 w-32 rounded object-cover"
               src={urlFor(pageInfo.heroImage).url()}
             />
-            <h2 className="text-sm uppercase tracking-2 text-gray-100">{pageInfo.role}</h2>
+            <h2 className="text-sm uppercase tracking-2 text-gray-50">{pageInfo.role}</h2>
           </div>
 
           <h1 className="absolute top-8 max-w-3xl px-8 text-3xl font-semibold md:text-5xl">

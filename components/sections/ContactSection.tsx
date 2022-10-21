@@ -28,9 +28,9 @@ function ContactSection({}: ContactSectionProps) {
         <SectionTitle title="Contact" />
 
         <div className="flex flex-col gap-10">
-          <h4 className="text-center text-4xl font-semibold">
+          <h3 className="text-center text-4xl font-semibold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h4>
+          </h3>
 
           <div className="space-y-10">
             <div className="flex items-center justify-center gap-5">

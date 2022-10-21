@@ -1,3 +1,4 @@
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
@@ -31,13 +32,13 @@ function Header({ socials }: HeaderProps) {
             aria-label={social.title}
             url={social.url}
             key={social._id}
-            fgColor="rgb(var(--gray-100))"
+            fgColor="rgb(var(--gray-50))"
             bgColor="transparent"
           />
         ))}
       </motion.div>
 
-      <Link href={{ hash: "contact" }} aria-label="Link To Contact">
+      <Link href={{ href: "", hash: "contact" }} aria-label="Link To Contact">
         <motion.div
           initial={{
             x: 500,
@@ -52,15 +53,10 @@ function Header({ socials }: HeaderProps) {
           transition={{
             duration: 1.5
           }}
-          className="flex cursor-pointer flex-row items-center text-gray-100"
+          className="flex cursor-pointer flex-row items-center text-gray-50"
         >
-          <SocialIcon
-            network="email"
-            className="cursor-pointer"
-            fgColor="rgb(var(--gray-100))"
-            bgColor="transparent"
-          />
-          <p className="hidden text-sm uppercase md:inline-flex">Get In Touch</p>
+          <EnvelopeIcon className="h-7 w-7 " />
+          <p className="hidden pl-2 text-sm uppercase md:inline-flex">Get In Touch</p>
         </motion.div>
       </Link>
     </header>

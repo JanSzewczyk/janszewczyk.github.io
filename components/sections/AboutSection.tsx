@@ -26,12 +26,13 @@ function AboutSection({ pageInfo }: AboutSectionProps) {
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
             src={urlFor(pageInfo.profilePic).url()}
+            alt="Profile Picture"
           />
 
           <div className="px-0 md:px-10">
-            <h4 className="mb-8 text-4xl font-semibold">
+            <h3 className="mb-8 text-4xl font-semibold">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </h4>
+            </h3>
             <p className="text-lg">{pageInfo.backgroundInformation}</p>
           </div>
         </div>

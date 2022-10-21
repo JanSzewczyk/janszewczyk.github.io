@@ -24,16 +24,17 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
         viewport={{ once: true }}
         className="mb-7 h-32 w-32 rounded object-cover object-center"
         src={urlFor(experience.companyImage).url()}
+        alt={`${experience.company} Logo`}
       />
 
       <div className="w-full">
-        <h4 className="text-4xl font-light">{experience.jobTitle}</h4>
+        <h3 className="text-4xl font-light">{experience.jobTitle}</h3>
         <p className="mt-1 text-2xl font-bold">{experience.company}</p>
         <div className="my-2 flex gap-x-2">
           {experience.technologies.map((tech) => (
             <img
               key={tech._id}
-              className="h-10 w-10 rounded-full"
+              className="h-10 w-10 rounded-1/2"
               src={urlFor(tech.image).url()}
               alt=""
             />
