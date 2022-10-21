@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.4...v1.2.5) (2022-10-21)
+
+
+### Bug Fixes
+
+* update seo/accessibility ([5142b14](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/5142b14b8f42f408b538403b92e28d54c4aaa397))
+
 ## [1.2.4](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.3...v1.2.4) (2022-10-20)
 
 
