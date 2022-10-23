@@ -10,7 +10,7 @@ interface HeaderProps {
 
 function Header({ socials }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl items-start justify-between overflow-hidden px-4 pt-2 xl:items-center">
+    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl items-center justify-between overflow-hidden px-4 pt-2">
       <motion.div
         initial={{
           x: -500,
@@ -32,7 +32,7 @@ function Header({ socials }: HeaderProps) {
             aria-label={social.title}
             url={social.url}
             key={social._id}
-            fgColor="rgb(var(--gray-50))"
+            fgColor="rgb(var(--gray-300))"
             bgColor="transparent"
           />
         ))}
@@ -53,9 +53,9 @@ function Header({ socials }: HeaderProps) {
           transition={{
             duration: 1.5
           }}
-          className="flex cursor-pointer flex-row items-center text-gray-50"
+          className="flex cursor-pointer select-none flex-row items-center text-gray-300 hover:text-gray-300/80"
         >
-          <EnvelopeIcon className="h-7 w-7 " />
+          <EnvelopeIcon className="h-7 w-7" />
           <p className="hidden pl-2 text-sm uppercase md:inline-flex">Get In Touch</p>
         </motion.div>
       </Link>

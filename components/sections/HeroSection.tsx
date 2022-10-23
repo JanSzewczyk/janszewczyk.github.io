@@ -29,16 +29,18 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
               className="relative mx-auto mb-6 h-32 w-32 rounded object-cover"
               src={urlFor(pageInfo.heroImage).url()}
             />
-            <h2 className="text-sm uppercase tracking-2 text-gray-50">{pageInfo.role}</h2>
+            <h2 className="select-none text-sm uppercase tracking-2 text-typography-secondary">
+              {pageInfo.role}
+            </h2>
           </div>
 
-          <h1 className="absolute top-8 max-w-3xl px-8 text-3xl font-semibold md:text-5xl">
+          <h1 className="absolute top-8 max-w-3xl select-none px-8 text-3xl font-semibold md:text-5xl">
             {isCode ? (
               <span className="font-code text-2xl text-yellow-500 md:text-4xl">{text}</span>
             ) : (
               <span>{text}</span>
             )}
-            <Cursor cursorColor="rgb(var(--primary))" />
+            <Cursor cursorColor="rgb(var(--primary-500))" />
           </h1>
         </div>
         <div className="absolute bottom-8 sm:bottom-2">

@@ -34,12 +34,12 @@ function ContactSection({}: ContactSectionProps) {
 
           <div className="space-y-10">
             <div className="flex items-center justify-center gap-5">
-              <PhoneIcon className="h-7 w-7 animate-pulse text-red-600" />
+              <PhoneIcon className="h-7 w-7 animate-pulse text-primary-500" />
               <p className="text-xl">+48 516 605 828</p>
             </div>
 
             <div className="flex items-center justify-center gap-5">
-              <EnvelopeIcon className="h-7 w-7 animate-pulse text-red-600" />
+              <EnvelopeIcon className="h-7 w-7 animate-pulse text-primary-500" />
               <p className="text-xl">szewczykjan@outlook.com</p>
             </div>
           </div>
@@ -67,12 +67,16 @@ function ContactSection({}: ContactSectionProps) {
               {...register("subject")}
             />
 
-            <textarea placeholder="Message" className="contact-input" {...register("message")} />
+            <textarea
+              placeholder="Message"
+              className="contact-input h-40"
+              {...register("message")}
+            />
 
             <button
-              onChange={handleSubmit(onSubmit)}
+              onClick={handleSubmit(onSubmit)}
               type="submit"
-              className="rounded-lg bg-red-500 py-5 px-10 font-bold text-black"
+              className="rounded bg-primary-500 py-4 px-10 font-bold text-black hover:bg-primary-600 active:bg-primary-400"
             >
               Submit
             </button>

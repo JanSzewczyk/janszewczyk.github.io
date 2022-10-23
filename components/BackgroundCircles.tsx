@@ -18,11 +18,11 @@ function BackgroundCircles({}: BackgroundCirclesProps) {
         duration: 2.5
       }}
     >
-      <div className="rounded-1/2 absolute h-[200px] w-[200px] animate-ping border border-gray-600" />
-      <div className="rounded-1/2 absolute h-[300px] w-[300px] animate-ping border border-gray-500" />
-      <div className="rounded-1/2 absolute h-[500px] w-[500px] animate-ping border border-gray-500" />
-      <div className="rounded-1/2 absolute h-[650px] w-[650px] animate-pulse border border-primary" />
-      <div className="rounded-1/2 absolute h-[800px] w-[800px] border border-gray-400" />
+      <div className="absolute h-[200px] w-[200px] animate-ping rounded-1/2 border border-gray-700" />
+      <div className="absolute h-[300px] w-[300px] animate-ping rounded-1/2 border border-gray-800" />
+      <div className="absolute h-[500px] w-[500px] animate-ping rounded-1/2 border border-gray-700" />
+      <div className="absolute h-[650px] w-[650px] animate-pulse rounded-1/2 border border-primary-500" />
+      <div className="absolute h-[800px] w-[800px] rounded-1/2 border border-gray-700" />
     </motion.div>
   );
 }

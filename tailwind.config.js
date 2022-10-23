@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     fontFamily: {
       sans: ["'Open Sans', sans-serif"]
@@ -24,8 +25,6 @@ module.exports = {
       colors: {
         black: "rgb(var(--black) / <alpha-value>)",
         gray: {
-          DEFAULT: "rgb(var(--gray) / <alpha-value>)",
-          50: "rgb(var(--gray-50) / <alpha-value>)",
           100: "rgb(var(--gray-100) / <alpha-value>)",
           200: "rgb(var(--gray-200) / <alpha-value>)",
           300: "rgb(var(--gray-300) / <alpha-value>)",
@@ -36,9 +35,24 @@ module.exports = {
           800: "rgb(var(--gray-800) / <alpha-value>)",
           900: "rgb(var(--gray-900) / <alpha-value>)"
         },
-        primary: "rgb(var(--primary) / <alpha-value>)",
-        typography: "rgb(var(--typography) / <alpha-value>)",
+        primary: {
+          100: "rgb(var(--primary-100) / <alpha-value>)",
+          200: "rgb(var(--primary-200) / <alpha-value>)",
+          300: "rgb(var(--primary-300) / <alpha-value>)",
+          400: "rgb(var(--primary-400) / <alpha-value>)",
+          500: "rgb(var(--primary-500) / <alpha-value>)",
+          600: "rgb(var(--primary-600) / <alpha-value>)",
+          700: "rgb(var(--primary-700) / <alpha-value>)",
+          800: "rgb(var(--primary-800) / <alpha-value>)",
+          900: "rgb(var(--primary-900) / <alpha-value>)"
+        },
         transparent: "transparent",
+        typography: {
+          DEFAULT: "rgb(var(--text-color) / <alpha-value>)",
+          primary: "rgb(var(--text-color) / 1)",
+          secondary: "rgb(var(--text-color) / 0.60)",
+          disabled: "rgb(var(--text-color) / 0.43)"
+        },
         white: "rgb(var(--white) / <alpha-value>)"
       }
     }

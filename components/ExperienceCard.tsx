@@ -16,7 +16,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   }
 
   return (
-    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center rounded bg-gray-700 p-4 opacity-60 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 lg:p-10">
+    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center rounded bg-gray-800 p-4 opacity-60 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 lg:p-10">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -34,9 +34,9 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.technologies.map((tech) => (
             <img
               key={tech._id}
-              className="h-10 w-10 rounded-1/2"
+              className="h-10 w-10"
               src={urlFor(tech.image).url()}
-              alt=""
+              alt={tech.title}
             />
           ))}
         </div>
