@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.5...v1.3.0) (2022-10-23)
+
+
+### Features
+
+* add new theme colors ([856e719](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/856e719e3dbd2298e5794aadeca92d9e4deb8d66))
+
 ## [1.2.5](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.4...v1.2.5) (2022-10-21)
 
 
