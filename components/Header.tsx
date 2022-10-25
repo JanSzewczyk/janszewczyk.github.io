@@ -2,23 +2,23 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
-import { Social } from "@types";
+import { HeaderInfo } from "@types";
 
 interface HeaderProps {
-  socials: Social[];
+  headerInfo: HeaderInfo;
 }
 
-function Header({ socials }: HeaderProps) {
+function Header({ headerInfo }: HeaderProps) {
   return (
     <header className="sticky top-0 z-20 mx-auto flex max-w-7xl items-center justify-between overflow-hidden px-4 pt-2">
       <motion.div
         initial={{
-          x: -500,
+          y: -300,
           opacity: 0,
           scale: 0.5
         }}
         animate={{
-          x: 0,
+          y: 0,
           opacity: 1,
           scale: 1
         }}
@@ -27,13 +27,14 @@ function Header({ socials }: HeaderProps) {
         }}
         className="flex flex-row items-center"
       >
-        {socials.map((social) => (
+        {headerInfo.socials.map((social) => (
           <SocialIcon
             aria-label={social.title}
-            url={social.url}
-            key={social._id}
-            fgColor="rgb(var(--gray-300))"
             bgColor="transparent"
+            fgColor="rgb(var(--gray-300))"
+            key={social._id}
+            target="_blank"
+            url={social.url}
           />
         ))}
       </motion.div>
@@ -41,12 +42,12 @@ function Header({ socials }: HeaderProps) {
       <Link href={{ href: "", hash: "contact" }} aria-label="Link To Contact">
         <motion.div
           initial={{
-            x: 500,
+            y: -300,
             opacity: 0,
             scale: 0.5
           }}
           animate={{
-            x: 0,
+            y: 0,
             opacity: 1,
             scale: 1
           }}
@@ -56,7 +57,7 @@ function Header({ socials }: HeaderProps) {
           className="flex cursor-pointer select-none flex-row items-center text-gray-300 hover:text-gray-300/80"
         >
           <EnvelopeIcon className="h-7 w-7" />
-          <p className="hidden pl-2 text-sm uppercase md:inline-flex">Get In Touch</p>
+          <p className="hidden pl-2 text-sm uppercase md:inline-flex">{headerInfo.contactLabel}</p>
         </motion.div>
       </Link>
     </header>

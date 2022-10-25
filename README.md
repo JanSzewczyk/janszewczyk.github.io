@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# TODO list:
+* [X] change `sanity` content type/update types in project
+* [ ] write content 
+* [ ] update `project` section (restyle)
+* [ ] styles nits 
+* [ ] update `README.md` file 
+
 ## Getting Started
 
 First, run the development server:

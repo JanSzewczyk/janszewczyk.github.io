@@ -1,22 +1,22 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "@components/BackgroundCircles";
 import Link from "next/link";
-import { PageInfo } from "@types";
+import { HeroSectionInfo } from "@types";
 import { urlFor } from "../../sanity";
 
 interface HeroSectionProps {
-  pageInfo: PageInfo;
+  heroInfo: HeroSectionInfo;
 }
 
-function HeroSection({ pageInfo }: HeroSectionProps) {
+function HeroSection({ heroInfo }: HeroSectionProps) {
   const [text, index] = useTypewriter({
-    words: pageInfo.typings.map((t) => t.content),
+    words: heroInfo.typings.map((t) => t.content),
     loop: true,
     delaySpeed: 2000
   });
 
-  const currentIndex = ((index as number) - 1) % pageInfo.typings.length;
-  const isCode = pageInfo.typings[currentIndex]?.asCode ?? false;
+  const currentIndex = ((index as number) - 1) % heroInfo.typings.length;
+  const isCode = heroInfo.typings[currentIndex]?.asCode ?? false;
 
   return (
     <section id="hero" className="h-screen snap-center">
@@ -25,12 +25,12 @@ function HeroSection({ pageInfo }: HeroSectionProps) {
         <div className="relative flex w-full flex-col items-center justify-center">
           <div className="absolute -bottom-4">
             <img
-              alt="Hero Picture"
+              alt={heroInfo.heroPicture.alt}
               className="relative mx-auto mb-6 h-32 w-32 rounded object-cover"
-              src={urlFor(pageInfo.heroImage).url()}
+              src={urlFor(heroInfo.heroPicture.img).url()}
             />
             <h2 className="select-none text-sm uppercase tracking-2 text-typography-secondary">
-              {pageInfo.role}
+              {heroInfo.role}
             </h2>
           </div>
 

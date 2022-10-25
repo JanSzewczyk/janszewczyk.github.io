@@ -19,10 +19,8 @@ export default {
     {
       name: "image",
       title: "Image",
-      type: "image",
-      options: {
-        hotspot: true
-      },
+      type: "reference",
+      to: [{ type: "picture" }],
       validation: (Rule) => Rule.required()
     }
   ]

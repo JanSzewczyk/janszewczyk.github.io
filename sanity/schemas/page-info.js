@@ -4,70 +4,128 @@ export default {
   type: "document",
   fields: [
     {
-      name: "heroImage",
-      title: "Image",
-      type: "image",
-      options: {
-        hotspot: true
-      }
-    },
-    {
       name: "name",
       title: "Name",
       type: "string"
     },
+
     {
-      name: "role",
-      title: "Role",
-      type: "string"
-    },
-    {
-      name: "typings",
-      title: "Typings",
-      type: "array",
-      of: [
+      name: "heroSection",
+      title: "About Section",
+      type: "object",
+      fields: [
         {
-          type: "object",
-          fields: [
-            { name: "content", type: "string", title: "Typed Content" },
-            { name: "asCode", type: "boolean", title: "As Code", initialValue: false }
+          name: "heroPicture",
+          title: "Hero Picture",
+          type: "reference",
+          to: [{ type: "picture" }]
+        },
+        {
+          name: "role",
+          title: "Role",
+          type: "string"
+        },
+        {
+          name: "typings",
+          title: "Typings",
+          type: "array",
+          of: [
+            {
+              type: "object",
+              fields: [
+                { name: "content", type: "string", title: "Typed Content" },
+                { name: "asCode", type: "boolean", title: "As Code", initialValue: false }
+              ]
+            }
           ]
         }
-      ]
+      ],
+      options: {
+        collapsible: true,
+        collapsed: false
+      }
     },
 
     {
-      name: "backgroundInformation",
-      title: "BackgroundInformation",
-      type: "string"
-    },
-    {
-      name: "profilePic",
-      title: "ProfilePic",
-      type: "image",
+      name: "aboutSection",
+      title: "About Section",
+      type: "object",
+      fields: [
+        {
+          name: "title",
+          title: "Title",
+          type: "string"
+        },
+        {
+          name: "description",
+          title: "Description",
+          type: "array",
+          of: [{ type: "block" }]
+        },
+        {
+          name: "profilePicture",
+          title: "Profile Picture",
+          type: "reference",
+          to: [{ type: "picture" }]
+        }
+      ],
       options: {
-        hotspot: true
+        collapsible: true,
+        collapsed: false
       }
     },
+
     {
-      name: "phoneNumber",
-      title: "PhoneNumber",
-      type: "string"
+      name: "experiences",
+      title: "Experiences",
+      type: "array",
+      of: [{ type: "reference", to: { type: "experience" } }]
     },
+
     {
-      name: "email",
-      title: "Email",
-      type: "string"
+      name: "skills",
+      title: "Skills",
+      type: "array",
+      of: [{ type: "reference", to: { type: "skill" } }]
     },
+
     {
-      name: "address",
-      title: "Address",
-      type: "string"
+      name: "projects",
+      title: "Projects",
+      type: "array",
+      of: [{ type: "reference", to: { type: "project" } }]
     },
+
     {
-      name: "companyName",
-      title: "Company Name",
-      type: "string"
+      name: "contactSection",
+      title: "Contact Section",
+      type: "object",
+      fields: [
+        {
+          name: "title",
+          title: "Title",
+          type: "string"
+        },
+        {
+          name: "phoneNumber",
+          title: "PhoneNumber",
+          type: "string"
+        },
+        {
+          name: "email",
+          title: "Email",
+          type: "string"
+        },
+        {
+          name: "address",
+          title: "Address",
+          type: "string"
+        }
+      ],
+      options: {
+        collapsible: true,
+        collapsed: false
+      }
     }
   ]
 };

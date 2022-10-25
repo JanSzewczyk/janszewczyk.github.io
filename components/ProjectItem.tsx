@@ -16,12 +16,12 @@ function ProjectItem({ project }: ProjectItemProps) {
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         className="mb-8 w-full max-w-md"
-        src={urlFor(project.image).url()}
-        alt={`${project.title} Picture`}
+        src={urlFor(project.image.img).url()}
+        alt={project.image.alt}
       />
       <div className="flex max-w-3xl flex-col overflow-x-auto">
-        <h3 className="px-2 text-center text-4xl font-semibold text-primary">{project.title}</h3>
-        <div className="app-scroll mt-5 overflow-x-auto px-5 text-center text-secondary md:text-left md:text-lg">
+        <h3 className="text-primary px-2 text-center text-4xl font-semibold">{project.title}</h3>
+        <div className="app-scroll text-secondary mt-5 overflow-x-auto px-5 text-center md:text-left md:text-lg">
           <p>{project.summary}</p>
         </div>
       </div>

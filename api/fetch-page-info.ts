@@ -3,7 +3,37 @@ import { groq } from "next-sanity";
 import { sanityClient } from "../sanity";
 
 const query = groq`
-  *[_type == "pageInfo"][0]
+  *[_type == "pageInfo"][0] {
+    ...,
+    aboutSection {
+      ...,
+      profilePicture->
+    },
+    experiences[]-> {
+      ...,
+      companyLogo->,
+      technologies[]-> {
+        ...,
+        image->
+      }
+    },
+    heroSection {
+      ...,
+      heroPicture->
+    },
+    projects[]-> {
+      ...,
+      image->,
+      technologies[]-> {
+        ...,
+        image->
+      }
+    },
+    skills[]-> {
+      ...,
+      image->
+    }
+  }
 `;
 
 export async function fetchPageInfo(): Promise<PageInfo> {

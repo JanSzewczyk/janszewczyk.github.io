@@ -1,16 +1,36 @@
 import { SanityBody } from "./sanity-body";
-import { Image } from "./image";
+import { Picture } from "./picture";
+import { Experience } from "./experience";
+import { Project } from "./project";
+import { Skill } from "./skill";
+import { PortableTextBlock } from "@portabletext/types";
 
 export interface PageInfo extends SanityBody {
   _type: "pageInfo";
-  address: string;
-  backgroundInformation: string;
+  aboutSection: AboutSectionInfo;
   companyName: string;
-  email: string;
-  heroImage: Image;
+  contactSection: ContactSectionInfo;
+  experiences: Experience[];
+  heroSection: HeroSectionInfo;
+  projects: Project[];
+  skills: Skill[];
   name: string;
+  role: string;
+}
+
+export interface AboutSectionInfo {
+  description: PortableTextBlock[];
+  profilePicture: Picture;
+  title: string;
+}
+export interface ContactSectionInfo {
+  address: string;
+  email: string;
   phoneNumber: string;
-  profilePic: Image;
+  title: string;
+}
+export interface HeroSectionInfo {
+  heroPicture: Picture;
   role: string;
   typings: TypingItem[];
 }

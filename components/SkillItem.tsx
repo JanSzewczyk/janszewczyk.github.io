@@ -23,8 +23,8 @@ function SkillItem({ index = 0, skill, rootRef }: SkillProps) {
     >
       <img
         className="h-full w-full rounded-lg border border-gray-600 object-cover filter transition duration-300 ease-in-out group-hover:grayscale"
-        src={urlFor(skill.image).url()}
-        alt={skill.title}
+        src={urlFor(skill.image.img).url()}
+        alt={skill.image.alt}
       />
       <div className="absolute z-0 h-full w-full rounded-lg opacity-0 transition duration-300 ease-in-out group-hover:bg-gray-500 group-hover:opacity-90">
         <div className="flex h-full items-center justify-center">

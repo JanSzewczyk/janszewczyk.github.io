@@ -1,9 +1,9 @@
-import { Image } from "./image";
 import { SanityBody } from "./sanity-body";
+import { Picture } from "./picture";
 
 export interface Skill extends SanityBody {
   _type: "skill";
-  image: Image;
+  image: Picture;
   progress: number;
   title: string;
 }

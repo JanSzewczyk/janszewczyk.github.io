@@ -1,10 +1,10 @@
 import { SanityBody } from "./sanity-body";
-import { Image } from "./image";
 import { Skill } from "./skill";
+import { Picture } from "./picture";
 
 export interface Project extends SanityBody {
   _type: "project";
-  image: Image;
+  image: Picture;
   linkToBuild: string;
   summary: string;
   technologies: Skill[];

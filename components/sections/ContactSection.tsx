@@ -2,6 +2,7 @@ import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { useForm } from "react-hook-form";
 import SectionTitle from "@components/SectionTitle";
 import Footer from "@components/Footer";
+import { ContactSectionInfo, FooterInfo } from "@types";
 
 interface ContactFormType {
   name: string;
@@ -10,9 +11,12 @@ interface ContactFormType {
   message: string;
 }
 
-interface ContactSectionProps {}
+interface ContactSectionProps {
+  contactInfo: ContactSectionInfo;
+  footerInfo: FooterInfo;
+}
 
-function ContactSection({}: ContactSectionProps) {
+function ContactSection({ contactInfo, footerInfo }: ContactSectionProps) {
   const { register, handleSubmit } = useForm<ContactFormType>();
 
   function onSubmit(formData: ContactFormType): void {
@@ -21,26 +25,24 @@ function ContactSection({}: ContactSectionProps) {
 
   return (
     <section
-      className="flex min-h-screen snap-start flex-col justify-between pt-16 md:pt-24"
+      className="mt-2 flex min-h-screen snap-start flex-col justify-between pt-16 md:pt-24"
       id="contact"
     >
       <div className="mx-auto flex max-w-7xl flex-1 flex-col px-5 pb-24 md:px-10">
         <SectionTitle title="Contact" />
 
         <div className="flex flex-col gap-10">
-          <h3 className="text-center text-4xl font-semibold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h3>
+          <h3 className="text-center text-4xl font-semibold">{contactInfo.title}</h3>
 
           <div className="space-y-10">
             <div className="flex items-center justify-center gap-5">
               <PhoneIcon className="h-7 w-7 animate-pulse text-primary-500" />
-              <p className="text-xl">+48 516 605 828</p>
+              <p className="text-xl">{contactInfo.phoneNumber}</p>
             </div>
 
             <div className="flex items-center justify-center gap-5">
               <EnvelopeIcon className="h-7 w-7 animate-pulse text-primary-500" />
-              <p className="text-xl">szewczykjan@outlook.com</p>
+              <p className="text-xl">{contactInfo.email}</p>
             </div>
           </div>
 
@@ -84,7 +86,7 @@ function ContactSection({}: ContactSectionProps) {
         </div>
       </div>
 
-      <Footer />
+      <Footer footerInfo={footerInfo} />
     </section>
   );
 }

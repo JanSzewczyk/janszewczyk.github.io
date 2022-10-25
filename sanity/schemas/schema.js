@@ -9,8 +9,10 @@ import experience from "./experience";
 import project from "./project";
 import skill from "./skill";
 import social from "./social";
+import picture from "./picture";
+import global from "./global";
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([pageInfo, experience, project, skill, social])
+  types: schemaTypes.concat([pageInfo, experience, project, skill, social, picture, global])
 });

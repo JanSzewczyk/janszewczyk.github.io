@@ -10,12 +10,10 @@ export default {
       validation: (Rule) => Rule.required()
     },
     {
-      name: "companyImage",
-      title: "Company Image",
-      type: "image",
-      options: {
-        hotspot: true
-      },
+      name: "companyLogo",
+      title: "Company Logo",
+      type: "reference",
+      to: [{ type: "picture" }],
       validation: (Rule) => Rule.required()
     },
     {

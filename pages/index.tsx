@@ -7,33 +7,29 @@ import WorkExperienceSection from "@components/sections/WorkExperienceSection";
 import SkillsSection from "@components/sections/SkillsSection";
 import ProjectsSection from "@components/sections/ProjectsSection";
 import ContactSection from "@components/sections/ContactSection";
-import { Experience, PageInfo, Project, Skill, Social } from "@types";
-import { fetchExperiences, fetchPageInfo, fetchProjects, fetchSkills, fetchSocials } from "@api";
+import { GlobalInfo, PageInfo } from "@types";
+import { fetchGlobalInfo, fetchPageInfo } from "@api";
 
 interface HomeProps {
-  experiences: Experience[];
+  globalInfo: GlobalInfo;
   pageInfo: PageInfo;
-  projects: Project[];
-  skills: Skill[];
-  socials: Social[];
 }
 
-function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
+function Home({ pageInfo, globalInfo }: HomeProps) {
   return (
     <main className="app-scroll app-scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto">
       <Head>
         <title>Jan Szewczyk`s portfolio</title>
       </Head>
 
-      <Header socials={socials} />
+      <Header headerInfo={globalInfo.header} />
 
-      <HeroSection pageInfo={pageInfo} />
-      <AboutSection pageInfo={pageInfo} />
-      <WorkExperienceSection experiences={experiences} />
-      <SkillsSection skills={skills} />
-      <ProjectsSection projects={projects} />
-
-      <ContactSection />
+      <HeroSection heroInfo={pageInfo.heroSection} />
+      <AboutSection aboutInfo={pageInfo.aboutSection} />
+      <WorkExperienceSection experiences={pageInfo.experiences} />
+      <SkillsSection skills={pageInfo.skills} />
+      <ProjectsSection projects={pageInfo.projects} />
+      <ContactSection contactInfo={pageInfo.contactSection} footerInfo={globalInfo.footer} />
     </main>
   );
 }
@@ -41,19 +37,13 @@ function Home({ experiences, pageInfo, projects, skills, socials }: HomeProps) {
 export default Home;
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const experiences = await fetchExperiences();
   const pageInfo = await fetchPageInfo();
-  const projects = await fetchProjects();
-  const skills = await fetchSkills();
-  const socials = await fetchSocials();
+  const globalInfo = await fetchGlobalInfo();
 
   return {
     props: {
-      experiences,
       pageInfo,
-      projects,
-      skills,
-      socials
+      globalInfo
     }
   };
 };

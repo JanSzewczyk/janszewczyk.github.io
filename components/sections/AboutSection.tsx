@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
-import { PageInfo } from "@types";
+import { AboutSectionInfo } from "@types";
 import { urlFor } from "../../sanity";
 import SectionTitle from "@components/SectionTitle";
+import { PortableText } from "@portabletext/react";
 
 interface AboutSectionProps {
-  pageInfo: PageInfo;
+  aboutInfo: AboutSectionInfo;
 }
 
-function AboutSection({ pageInfo }: AboutSectionProps) {
+function AboutSection({ aboutInfo }: AboutSectionProps) {
   return (
     <section className="min-h-screen snap-start pt-16 pb-24 md:pt-24" id="about">
       <motion.div
@@ -25,15 +26,15 @@ function AboutSection({ pageInfo }: AboutSectionProps) {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
-            src={urlFor(pageInfo.profilePic).url()}
-            alt="Profile Picture"
+            src={urlFor(aboutInfo.profilePicture.img).url()}
+            alt={aboutInfo.profilePicture.alt}
           />
 
           <div className="px-0 md:px-10">
-            <h3 className="mb-8 text-4xl font-semibold">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </h3>
-            <p className="text-lg">{pageInfo.backgroundInformation}</p>
+            <h3 className="mb-8 text-4xl font-semibold">{aboutInfo.title}</h3>
+            <div className="text-lg">
+              <PortableText value={aboutInfo.description} />
+            </div>
           </div>
         </div>
       </motion.div>

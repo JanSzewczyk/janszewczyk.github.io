@@ -1,11 +1,11 @@
 import { SanityBody } from "./sanity-body";
-import { Image } from "./image";
 import { Skill } from "./skill";
+import { Picture } from "./picture";
 
 export interface Experience extends SanityBody {
   _type: "experience";
   company: string;
-  companyImage: Image;
+  companyLogo: Picture;
   dateEnded?: string;
   dateStarted: string;
   isCurrentlyWorkingHere: boolean;

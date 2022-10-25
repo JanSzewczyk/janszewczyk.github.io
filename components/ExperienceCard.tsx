@@ -23,8 +23,8 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         className="mb-7 h-32 w-32 rounded object-cover object-center"
-        src={urlFor(experience.companyImage).url()}
-        alt={`${experience.company} Logo`}
+        src={urlFor(experience.companyLogo.img).url()}
+        alt={experience.companyLogo.alt}
       />
 
       <div className="w-full">
@@ -35,8 +35,8 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
             <img
               key={tech._id}
               className="h-10 w-10"
-              src={urlFor(tech.image).url()}
-              alt={tech.title}
+              src={urlFor(tech.image.img).url()}
+              alt={tech.image.alt}
             />
           ))}
         </div>
