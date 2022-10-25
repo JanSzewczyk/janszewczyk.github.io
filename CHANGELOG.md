@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.3.0...v1.4.0) (2022-10-25)
+
+
+### Features
+
+* rebuild sanity info data/update data types ([7089112](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/70891127f5f6aa6af8a205f7becda3e8687e7a42))
+
 # [1.3.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.2.5...v1.3.0) (2022-10-23)
 
 
