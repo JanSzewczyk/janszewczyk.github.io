@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.4.0...v1.4.1) (2022-10-25)
+
+
+### Bug Fixes
+
+* add missed location in contact section ([db6513a](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/db6513acaa6610ea5ab2ce9542e1b70dcb4561e3))
+
 # [1.4.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.3.0...v1.4.0) (2022-10-25)
 
 
