@@ -1,4 +1,4 @@
-import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { useForm } from "react-hook-form";
 import SectionTitle from "@components/SectionTitle";
 import Footer from "@components/Footer";
@@ -34,15 +34,20 @@ function ContactSection({ contactInfo, footerInfo }: ContactSectionProps) {
         <div className="flex flex-col gap-10">
           <h3 className="text-center text-4xl font-semibold">{contactInfo.title}</h3>
 
-          <div className="space-y-10">
+          <div className="space-y-8">
             <div className="flex items-center justify-center gap-5">
-              <PhoneIcon className="h-7 w-7 animate-pulse text-primary-500" />
+              <PhoneIcon className="h-7 w-7 text-primary-500/80" />
               <p className="text-xl">{contactInfo.phoneNumber}</p>
             </div>
 
             <div className="flex items-center justify-center gap-5">
-              <EnvelopeIcon className="h-7 w-7 animate-pulse text-primary-500" />
+              <EnvelopeIcon className="h-7 w-7 text-primary-500/80" />
               <p className="text-xl">{contactInfo.email}</p>
+            </div>
+
+            <div className="flex items-center justify-center gap-5">
+              <MapPinIcon className="h-7 w-7 text-primary-500/80" />
+              <p className="text-xl">{contactInfo.address}</p>
             </div>
           </div>
 
