@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.4.1...v1.4.2) (2022-10-28)
+
+
+### Bug Fixes
+
+* prepare part app content ([08bb462](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/08bb4626b2c5a918b9d88814b6847a2d9900f8eb))
+
 ## [1.4.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.4.0...v1.4.1) (2022-10-25)
 
 
