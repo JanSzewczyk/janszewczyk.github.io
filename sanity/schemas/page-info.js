@@ -11,7 +11,7 @@ export default {
 
     {
       name: "heroSection",
-      title: "About Section",
+      title: "Hero Section",
       type: "object",
       fields: [
         {

@@ -1,8 +1,7 @@
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
 import { useForm } from "react-hook-form";
 import SectionTitle from "@components/SectionTitle";
-import Footer from "@components/Footer";
-import { ContactSectionInfo, FooterInfo } from "@types";
+import { ContactSectionInfo } from "@types";
 
 interface ContactFormType {
   name: string;
@@ -13,10 +12,9 @@ interface ContactFormType {
 
 interface ContactSectionProps {
   contactInfo: ContactSectionInfo;
-  footerInfo: FooterInfo;
 }
 
-function ContactSection({ contactInfo, footerInfo }: ContactSectionProps) {
+function ContactSection({ contactInfo }: ContactSectionProps) {
   const { register, handleSubmit } = useForm<ContactFormType>();
 
   function onSubmit(formData: ContactFormType): void {
@@ -25,25 +23,31 @@ function ContactSection({ contactInfo, footerInfo }: ContactSectionProps) {
 
   return (
     <section
-      className="mt-2 flex min-h-screen snap-start flex-col justify-between pt-16 md:pt-24"
+      className="mt-2 flex min-h-screen snap-start flex-col justify-between pb-32 pt-16 md:pt-24"
       id="contact"
     >
-      <div className="mx-auto flex max-w-7xl flex-1 flex-col px-5 pb-24 md:px-10">
+      <div className="mx-auto flex max-w-7xl flex-1 flex-col px-5 md:px-10">
         <SectionTitle title="Contact" />
 
         <div className="flex flex-col gap-10">
-          <h3 className="text-center text-4xl font-semibold">{contactInfo.title}</h3>
+          <h3 className="text-center text-3xl font-semibold md:text-4xl">{contactInfo.title}</h3>
 
           <div className="space-y-8">
-            <div className="flex items-center justify-center gap-5">
+            <a
+              className="flex items-center justify-center gap-5"
+              href={`tel:${contactInfo.phoneNumber.replaceAll(" ", "")}`}
+            >
               <PhoneIcon className="h-7 w-7 text-primary-500/80" />
               <p className="text-xl">{contactInfo.phoneNumber}</p>
-            </div>
+            </a>
 
-            <div className="flex items-center justify-center gap-5">
+            <a
+              className="flex items-center justify-center gap-5"
+              href={`mailto:${contactInfo.email}`}
+            >
               <EnvelopeIcon className="h-7 w-7 text-primary-500/80" />
               <p className="text-xl">{contactInfo.email}</p>
-            </div>
+            </a>
 
             <div className="flex items-center justify-center gap-5">
               <MapPinIcon className="h-7 w-7 text-primary-500/80" />
@@ -51,7 +55,7 @@ function ContactSection({ contactInfo, footerInfo }: ContactSectionProps) {
             </div>
           </div>
 
-          <form className="mx-auto flex max-w-md flex-col gap-2">
+          <form className="mx-auto flex w-full max-w-md flex-col gap-2">
             <div className="flex flex-col gap-2 md:flex-row">
               <input
                 type="text"
@@ -90,8 +94,6 @@ function ContactSection({ contactInfo, footerInfo }: ContactSectionProps) {
           </form>
         </div>
       </div>
-
-      <Footer footerInfo={footerInfo} />
     </section>
   );
 }

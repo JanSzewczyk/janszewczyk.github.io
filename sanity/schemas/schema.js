@@ -14,5 +14,5 @@ import global from "./global";
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([pageInfo, experience, project, skill, social, picture, global])
+  types: schemaTypes.concat([global, pageInfo, experience, project, skill, social, picture])
 });

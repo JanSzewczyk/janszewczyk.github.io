@@ -3,8 +3,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 # TODO list:
 * [X] change `sanity` content type/update types in project
 * [ ] write content 
+* [ ] add cv to
 * [ ] update `project` section (restyle)
 * [ ] styles nits 
+* [ ] update next to v13
 * [ ] update `README.md` file 
 
 ## Getting Started

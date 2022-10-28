@@ -10,7 +10,7 @@ interface HeaderProps {
 
 function Header({ headerInfo }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex max-w-7xl items-center justify-between overflow-hidden px-4 pt-2">
+    <header className="lg: sticky top-0 z-20 mx-auto flex max-w-7xl items-center justify-between overflow-hidden bg-gray-900/80 px-4 pt-2 lg:bg-gray-900/0">
       <motion.div
         initial={{
           y: -300,

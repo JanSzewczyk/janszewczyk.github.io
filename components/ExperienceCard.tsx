@@ -16,7 +16,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   }
 
   return (
-    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center rounded bg-gray-800 p-4 opacity-60 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 lg:p-10">
+    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center overflow-y-auto rounded bg-gray-800 p-4 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -27,10 +27,10 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
         alt={experience.companyLogo.alt}
       />
 
-      <div className="w-full">
-        <h3 className="text-4xl font-light">{experience.jobTitle}</h3>
-        <p className="mt-1 text-2xl font-bold">{experience.company}</p>
-        <div className="my-2 flex gap-x-2">
+      <div className="flex w-full flex-col overflow-y-auto">
+        <h3 className="text-center text-3xl font-light md:text-4xl">{experience.jobTitle}</h3>
+        <p className="mt-1 text-center text-xl font-bold md:text-2xl">{experience.company}</p>
+        <div className="mt-4 flex flex-wrap justify-center gap-2">
           {experience.technologies.map((tech) => (
             <img
               key={tech._id}
@@ -41,17 +41,19 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
           ))}
         </div>
 
-        <p className="py-5 font-semibold uppercase text-gray-100">
+        <p className="py-4 font-semibold uppercase text-gray-100">
           {formatDate(experience.dateStarted)} -{" "}
           {!experience.isCurrentlyWorkingHere && experience.dateEnded
             ? formatDate(experience.dateEnded)
             : "Present"}
         </p>
-        <ul className="ml-5 list-disc space-y-4 text-lg ">
-          {experience.points.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
+        <div className="app-scroll overflow-y-auto ">
+          <ul className="ml-5 list-disc space-y-2 text-lg">
+            {experience.points.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </article>
   );

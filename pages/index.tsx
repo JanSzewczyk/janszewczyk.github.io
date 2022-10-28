@@ -9,6 +9,7 @@ import ProjectsSection from "@components/sections/ProjectsSection";
 import ContactSection from "@components/sections/ContactSection";
 import { GlobalInfo, PageInfo } from "@types";
 import { fetchGlobalInfo, fetchPageInfo } from "@api";
+import Footer from "@components/Footer";
 
 interface HomeProps {
   globalInfo: GlobalInfo;
@@ -29,7 +30,10 @@ function Home({ pageInfo, globalInfo }: HomeProps) {
       <WorkExperienceSection experiences={pageInfo.experiences} />
       <SkillsSection skills={pageInfo.skills} />
       <ProjectsSection projects={pageInfo.projects} />
-      <ContactSection contactInfo={pageInfo.contactSection} footerInfo={globalInfo.footer} />
+      <ContactSection contactInfo={pageInfo.contactSection} />
+      <div className={"snap-end"}>
+        <Footer footerInfo={globalInfo.footer} />
+      </div>
     </main>
   );
 }
