@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.4.2...v1.5.0) (2022-10-29)
+
+
+### Features
+
+* update `Projects` section and add some content ([3c38c31](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/3c38c31e2be38bf4d37182b269c9f7579d1567f4))
+
 ## [1.4.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.4.1...v1.4.2) (2022-10-28)
 
 
