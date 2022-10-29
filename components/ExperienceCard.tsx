@@ -34,7 +34,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.technologies.map((tech) => (
             <img
               key={tech._id}
-              className="h-10 w-10"
+              className="h-8 w-8 md:h-10 md:w-10"
               src={urlFor(tech.image.img).url()}
               alt={tech.image.alt}
             />
@@ -47,7 +47,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
             ? formatDate(experience.dateEnded)
             : "Present"}
         </p>
-        <div className="app-scroll overflow-y-auto ">
+        <div className="app-scroll overflow-y-auto">
           <ul className="ml-5 list-disc space-y-2 text-lg">
             {experience.points.map((point, index) => (
               <li key={index}>{point}</li>

@@ -1,12 +1,14 @@
 import { SanityBody } from "./sanity-body";
 import { Skill } from "./skill";
 import { Picture } from "./picture";
+import { PortableTextBlock } from "@portabletext/types";
 
 export interface Project extends SanityBody {
-  _type: "project";
   image: Picture;
-  linkToBuild: string;
-  summary: string;
+  linkToBuild?: string;
+  linkToRepository: string;
+  summary: PortableTextBlock[];
   technologies: Skill[];
   title: string;
+  _type: "project";
 }

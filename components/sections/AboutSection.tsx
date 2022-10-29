@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { AboutSectionInfo } from "@types";
 import { urlFor } from "../../sanity";
 import SectionTitle from "@components/SectionTitle";
-import { PortableText } from "@portabletext/react";
-import Link from "next/link";
+import PortableText from "@components/PortableText";
 
 interface AboutSectionProps {
   aboutInfo: AboutSectionInfo;
@@ -34,48 +33,7 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
           <div className="px-0 md:px-10">
             <h3 className="mb-8 text-3xl font-semibold md:text-4xl">{aboutInfo.title}</h3>
             <div className="text-md md:text-lg">
-              <PortableText
-                value={aboutInfo.description}
-                components={{
-                  block: {
-                    normal: ({ children }) => <p className="mb-2">{children}</p>
-                  },
-                  marks: {
-                    link: ({ children, value }) => {
-                      const content = Array.isArray(children) ? children[0] : children;
-
-                      if (value.href.startsWith("#")) {
-                        return (
-                          <Link href={{ href: "", hash: value.href }}>
-                            <a className="font-bold text-primary-400 hover:text-primary-500">
-                              {content}
-                            </a>
-                          </Link>
-                        );
-                      }
-
-                      if (value.href.startsWith("/")) {
-                        return (
-                          <Link href={{ href: value.href }}>
-                            <a className="font-bold text-primary-400 hover:text-primary-500">
-                              {content}
-                            </a>
-                          </Link>
-                        );
-                      }
-
-                      return (
-                        <a
-                          className="font-bold text-primary-400 hover:text-primary-500"
-                          href={value.href}
-                        >
-                          {children}
-                        </a>
-                      );
-                    }
-                  }
-                }}
-              />
+              <PortableText value={aboutInfo.description} />
             </div>
           </div>
         </div>

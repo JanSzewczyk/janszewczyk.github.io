@@ -11,7 +11,7 @@ interface ProjectsSectionProps {
 function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section className="relative flex h-screen snap-start pt-16 md:pt-24" id="projects">
-      <div className="absolute left-0 top-[20%] z-0 h-1/2 w-full -skew-y-12 bg-primary/10" />
+      <div className="absolute left-0 top-[20%] z-0 h-1/2 w-full -skew-y-12 bg-primary-500/10" />
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -23,8 +23,13 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
 
         <div className="app-scroll flex flex-1 snap-x snap-proximity overflow-x-auto pb-5 md:pb-10">
           <div className="mx-auto flex flex-row gap-x-6">
-            {projects.map((project) => (
-              <ProjectItem key={project._id} project={project} />
+            {projects.map((project, index) => (
+              <ProjectItem
+                index={index}
+                key={project._id}
+                project={project}
+                projectsAmount={projects.length}
+              />
             ))}
           </div>
         </div>

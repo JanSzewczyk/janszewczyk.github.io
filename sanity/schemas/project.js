@@ -5,7 +5,7 @@ export default {
   fields: [
     {
       name: "title",
-      title: "title",
+      title: "Title",
       description: "Title of the project",
       type: "string",
       validation: (Rule) => Rule.required()
@@ -17,12 +17,7 @@ export default {
       to: [{ type: "picture" }],
       validation: (Rule) => Rule.required()
     },
-    {
-      name: "summary",
-      title: "Summary",
-      type: "text",
-      validation: (Rule) => Rule.required()
-    },
+
     {
       name: "technologies",
       title: "Technologies",
@@ -30,10 +25,22 @@ export default {
       of: [{ type: "reference", to: { type: "skill" } }]
     },
     {
-      name: "linkToBuild",
-      title: "Link To Build",
+      name: "linkToRepository",
+      title: "Link To Repository",
       type: "url",
       validation: (Rule) => Rule.required()
+    },
+    {
+      name: "summary",
+      title: "Summary",
+      type: "array",
+      of: [{ type: "block" }],
+      validation: (Rule) => Rule.required()
+    },
+    {
+      name: "linkToBuild",
+      title: "Link To Build",
+      type: "url"
     }
   ]
 };
