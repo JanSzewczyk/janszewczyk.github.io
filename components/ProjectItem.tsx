@@ -69,7 +69,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
               target="_blank"
               className="flex flex-row items-center font-bold hover:text-primary-500 md:text-lg"
             >
-              Let's check the demo <RocketLaunchIcon className="ml-2 h-5 w-5" />
+              Let&apos;s check the demo <RocketLaunchIcon className="ml-2 h-5 w-5" />
             </motion.a>
           </div>
         ) : null}
