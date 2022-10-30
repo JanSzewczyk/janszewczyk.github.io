@@ -46,7 +46,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
             <img
               key={tech._id}
               className="h-8 w-8 rounded-sm md:h-10 md:w-10"
-              src={urlFor(tech.image.img).url()}
+              src={urlFor(tech.image.img).width(255).height(255).url()}
               alt={tech.image.alt}
             />
           ))}
