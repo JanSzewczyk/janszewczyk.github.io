@@ -59,7 +59,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         </div>
 
         {project.linkToBuild ? (
-          <div className="mt-4 flex justify-end overflow-x-hidden md:mt-8">
+          <div className="mt-4 flex justify-end overflow-hidden md:mt-8">
             <motion.a
               initial={{ opacity: 0, x: 150 }}
               whileInView={{ opacity: 1, x: 0 }}
