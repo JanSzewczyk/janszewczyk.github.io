@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.3...v1.5.4) (2022-10-30)
+
+
+### Bug Fixes
+
+* `ExperienceCard` images styles ([1c21327](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/1c213278039358cd8304419c42eb3862214f827b))
+
 ## [1.5.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.2...v1.5.3) (2022-10-30)
 
 
