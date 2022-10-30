@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.0...v1.5.1) (2022-10-30)
+
+
+### Bug Fixes
+
+* **action:** fix test `job` to `release` action ([376925e](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/376925e46e059347842814449ae5bcfd68c2471b))
+* fix build ([0158f76](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/0158f76ed23c29a4730c25e6c359b4a998bc70bb))
+
 # [1.5.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.4.2...v1.5.0) (2022-10-29)
 
 
