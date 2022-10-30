@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.2...v1.5.3) (2022-10-30)
+
+
+### Bug Fixes
+
+* image size ([4f6841c](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/4f6841c57d128ca6a8f3dc67efaa42b85203b955))
+
 ## [1.5.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.1...v1.5.2) (2022-10-30)
 
 
