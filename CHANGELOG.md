@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.1...v1.5.2) (2022-10-30)
+
+
+### Bug Fixes
+
+* `Project` card styles ([15cfa0c](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/15cfa0ceaf86fff8840efa6f8a69238af0989416))
+
 ## [1.5.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.0...v1.5.1) (2022-10-30)
 
 
