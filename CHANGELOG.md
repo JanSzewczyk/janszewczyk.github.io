@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.6.0...v1.6.1) (2022-11-06)
+
+
+### Bug Fixes
+
+* `About` section styles ([32e9ca0](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/32e9ca01b4e308d26d032525b566557ea3ed7387))
+
 # [1.6.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.4...v1.6.0) (2022-11-06)
 
 
