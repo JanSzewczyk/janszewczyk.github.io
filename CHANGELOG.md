@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.4...v1.6.0) (2022-11-06)
+
+
+### Features
+
+* add `@szum-tech/design-system` to project ([0b9393f](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/0b9393f9c75c24496b2423eed6dbfda99fe060da))
+
 ## [1.5.4](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.5.3...v1.5.4) (2022-10-30)
 
 
