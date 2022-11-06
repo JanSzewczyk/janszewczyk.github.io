@@ -21,7 +21,7 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
 
         <div className="flex flex-col items-center lg:flex-row lg:items-start">
           <motion.img
-            className="md:w-94 mb-10 h-56 w-56 flex-shrink-0 rounded object-cover lg:mb-0 lg:h-64 xl:h-[600px] xl:w-[500px]"
+            className="mb-10 h-56 w-56 flex-shrink-0 rounded object-cover lg:mb-0 lg:h-64 xl:h-[550px] xl:w-[450px]"
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.2 }}
@@ -32,7 +32,7 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
 
           <div className="px-0 md:px-10">
             <h3 className="mb-8 text-3xl font-semibold md:text-4xl">{aboutInfo.title}</h3>
-            <div className="text-md md:text-lg">
+            <div className="text-md">
               <PortableText value={aboutInfo.description} />
             </div>
           </div>
