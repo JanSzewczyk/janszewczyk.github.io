@@ -717,6 +717,13 @@
   dependencies:
     tslib "^2.4.0"
 
+"@szum-tech/design-system@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.1.2.tgz#3cc4343d18c1940e5c8dade1f1c872cb4b718a87"
+  integrity sha512-eHvo4reHxJSJ6XP/Vzr+vQ+8rszvtRjbH+3qdMjZS9x5K08LTI8ady+1uWSvHcr3Es1A7WbR9QDg5xs27QO6ig==
+  dependencies:
+    tailwind-scrollbar "^2.0.1"
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
@@ -4906,10 +4913,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-tailwind-scrollbar@^2.1.0-preview.0:
-  version "2.1.0-preview.0"
-  resolved "https://registry.yarnpkg.com/tailwind-scrollbar/-/tailwind-scrollbar-2.1.0-preview.0.tgz#107641c6e819ef16a131c3c3aaf82c41c7493a30"
-  integrity sha512-FEyIS5G92onTdp+HbDyP2+hT6bSLFOWqzkWY03PujxmBDeQeqOL9xnmTYDzqFFpOAZWJCHx1QYUo8M18bMNpnA==
+tailwind-scrollbar@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/tailwind-scrollbar/-/tailwind-scrollbar-2.0.1.tgz#f08721173d513f1406a44601640b79726e3f9728"
+  integrity sha512-OcR7qHBbux4k+k6bWqnEQFYFooLK/F4dhkBz6nvswIoaA9ancZ5h20e0tyV7ifSWLDCUBtpG+1NHRA8HMRH/wg==
 
 tailwindcss@^3.1.8:
   version "3.1.8"

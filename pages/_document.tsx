@@ -12,7 +12,7 @@ const keywords: string[] = [
 
 function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" className="dark">
       <Head>
         <meta
           name="description"
@@ -20,19 +20,8 @@ function Document() {
         />
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
         <meta name="keywords" content={keywords.join(", ")} />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
-      <body className="bg-gray-900 antialiased">
+      <body>
         <Main />
         <NextScript />
       </body>

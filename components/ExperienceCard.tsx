@@ -16,7 +16,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   }
 
   return (
-    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center overflow-y-auto rounded bg-gray-800 p-4 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
+    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center overflow-y-auto rounded bg-white dark:bg-gray-800 p-4 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
