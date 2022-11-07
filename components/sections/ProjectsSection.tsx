@@ -17,7 +17,7 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="z-20 mx-auto flex h-full max-w-7xl flex-1 flex-col overflow-x-auto px-5 md:px-10"
+        className="z-10 mx-auto flex h-full max-w-7xl flex-1 flex-col overflow-x-auto px-5 md:px-10"
       >
         <SectionTitle title="Projects" />
 

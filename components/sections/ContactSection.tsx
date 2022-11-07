@@ -22,10 +22,7 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
   }
 
   return (
-    <section
-      className="mt-2 flex min-h-screen snap-start flex-col justify-between pb-32 pt-16 md:pt-24"
-      id="contact"
-    >
+    <section className="mt-2 flex min-h-screen snap-start pb-32 pt-16 md:pt-24" id="contact">
       <div className="mx-auto flex max-w-7xl flex-1 flex-col px-5 md:px-10">
         <SectionTitle title="Contact" />
 

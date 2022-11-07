@@ -31,7 +31,7 @@ function Home({ pageInfo, globalInfo }: HomeProps) {
       <SkillsSection skills={pageInfo.skills} />
       <ProjectsSection projects={pageInfo.projects} />
       <ContactSection contactInfo={pageInfo.contactSection} />
-      <div className={"snap-end"}>
+      <div className={"snap-start"}>
         <Footer footerInfo={globalInfo.footer} />
       </div>
     </main>
