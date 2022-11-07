@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.6.1...v1.6.2) (2022-11-07)
+
+
+### Bug Fixes
+
+* styles nits ([4aebd9a](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/4aebd9ad5fde9e8b72d8d5061276174494305d09))
+
 ## [1.6.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.6.0...v1.6.1) (2022-11-06)
 
 
