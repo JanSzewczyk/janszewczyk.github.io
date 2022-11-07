@@ -717,12 +717,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@szum-tech/design-system@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.1.2.tgz#3cc4343d18c1940e5c8dade1f1c872cb4b718a87"
-  integrity sha512-eHvo4reHxJSJ6XP/Vzr+vQ+8rszvtRjbH+3qdMjZS9x5K08LTI8ady+1uWSvHcr3Es1A7WbR9QDg5xs27QO6ig==
-  dependencies:
-    tailwind-scrollbar "^2.0.1"
+"@szum-tech/design-system@^1.1.3":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.1.4.tgz#b16d4f982ff02d55e18ac1479219ec809744f16e"
+  integrity sha512-QbSgpgI1PDa2ESmmBEUCH8VWHqwWr3UDt/ULZf7uXEd1P9glgxZHTrHYtRnjzhs999toSE5/iwOZbobVAHvYUg==
 
 "@tootallnate/once@2":
   version "2.0.0"
