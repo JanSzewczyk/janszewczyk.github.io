@@ -18,7 +18,7 @@ interface HomeProps {
 
 function Home({ pageInfo, globalInfo }: HomeProps) {
   return (
-    <main className="app-scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto">
+    <main className="scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto">
       <Head>
         <title>Jan Szewczyk`s portfolio</title>
       </Head>

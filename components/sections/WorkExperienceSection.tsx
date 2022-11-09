@@ -18,7 +18,7 @@ function WorkExperienceSection({ experiences }: WorkExperienceSectionProps) {
       >
         <SectionTitle title="Experience" />
 
-        <div className="app-scroll flex flex-1 snap-x snap-mandatory overflow-x-auto pb-5 md:snap-proximity md:pb-10">
+        <div className="scroll flex flex-1 snap-x snap-mandatory overflow-x-auto pb-5 md:snap-proximity md:pb-10">
           <div className="mx-auto flex flex-row gap-x-6">
             {experiences.map((experience) => (
               <ExperienceCard key={experience._id} experience={experience} />

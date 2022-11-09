@@ -16,7 +16,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   }
 
   return (
-    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center overflow-y-auto rounded bg-white dark:bg-gray-800 p-4 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
+    <article className="flex w-[calc(100vw-3rem)] cursor-pointer snap-center flex-col items-center overflow-y-auto rounded bg-white p-4 transition-opacity duration-200 hover:opacity-100 dark:bg-gray-800 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -47,7 +47,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
             ? formatDate(experience.dateEnded)
             : "Present"}
         </p>
-        <div className="app-scroll overflow-y-auto">
+        <div className="scroll overflow-y-auto">
           <ul className="ml-5 list-disc space-y-2 text-lg">
             {experience.points.map((point, index) => (
               <li key={index}>{point}</li>

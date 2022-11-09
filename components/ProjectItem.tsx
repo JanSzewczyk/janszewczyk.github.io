@@ -52,7 +52,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
           ))}
         </div>
 
-        <div className="app-scroll mt-4 overflow-y-auto px-4 md:mt-6">
+        <div className="scroll mt-4 overflow-y-auto px-4 md:mt-6">
           <div className="text-center md:text-left md:text-lg">
             <PortableText value={project.summary} />
           </div>

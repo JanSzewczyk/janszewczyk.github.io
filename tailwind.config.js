@@ -9,5 +9,5 @@ module.exports = {
     extend: {}
   },
   plugins: [],
-  presets: [require("@szum-tech/design-system/tailwind-preset")]
+  presets: [require("@szum-tech/design-system/tailwindcss/main-preset")]
 };
