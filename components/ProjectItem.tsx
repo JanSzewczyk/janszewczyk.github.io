@@ -20,7 +20,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="mb-4 w-full max-w-md px-4 md:mb-8"
+        className="mb-4 w-full max-w-md px-8 md:mb-8"
         src={urlFor(project.image.img).url()}
         alt={project.image.alt}
       />

@@ -1,3 +1,4 @@
+import { ArrowDownOnSquareIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { AboutSectionInfo } from "@types";
 import { urlFor } from "../../sanity";
@@ -9,6 +10,32 @@ interface AboutSectionProps {
 }
 
 function AboutSection({ aboutInfo }: AboutSectionProps) {
+  function downloadCV(): void {
+    fetch("files/Jan-Szewczyk-CV.pdf", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/pdf"
+      }
+    })
+      .then((response) => response.blob())
+      .then((blob) => {
+        // Create blob link to download
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", `Jan-Szewczyk-CV.pdf`);
+
+        // Append to html link element page
+        document.body.appendChild(link);
+
+        // Start download
+        link.click();
+
+        // Clean up and remove the
+        link.parentNode?.removeChild(link);
+      });
+  }
+
   return (
     <section className="min-h-screen snap-start pt-16 pb-24 md:pt-24" id="about">
       <motion.div
@@ -34,6 +61,17 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
             <h3 className="mb-8 text-3xl font-semibold md:text-4xl">{aboutInfo.title}</h3>
             <div className="text-md">
               <PortableText value={aboutInfo.description} />
+            </div>
+            <div className="mt-4">
+              <p className="">
+                Want to save information obout ME &mdash;{" "}
+                <button
+                  className="inline-flex font-bold text-primary-400 hover:text-primary-500"
+                  onClick={downloadCV}
+                >
+                  download my CV <ArrowDownOnSquareIcon className="ml-2 h-6 w-6" />
+                </button>
+              </p>
             </div>
           </div>
         </div>

@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply overflow-hidden;
-  }
-}
-
 @layer components {
   .contact-input {
     @apply w-full border border-gray-700 bg-black px-4 py-2 text-typography-primary placeholder-typography-disabled outline-none
