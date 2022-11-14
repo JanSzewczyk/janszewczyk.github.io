@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.6.3...v1.7.0) (2022-11-14)
+
+
+### Features
+
+* **cv:** add download CV mechanism ([27e3623](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/27e3623c3c13ea1c11c41fa26b8a91464393a080))
+
 ## [1.6.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.6.2...v1.6.3) (2022-11-07)
 
 
