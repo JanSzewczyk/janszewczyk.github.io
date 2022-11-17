@@ -4,9 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 * [X] change `sanity` content type/update types in project
 * [X] write content 
 * [X] add cv to
-* [ ] update `project` section (restyle)
+* [X] update `project` section (restyle)
 * [X] styles nits 
-* [ ] update next to v13
+* [X] update next to v13
 * [ ] update `README.md` file 
 
 ## Getting Started

@@ -20,16 +20,22 @@ function PortableText({ value = [] }: PortableTextProps) {
 
             if (value.href.startsWith("#")) {
               return (
-                <Link href={{ href: "", hash: value.href }}>
-                  <a className="font-bold text-primary-400 hover:text-primary-500">{content}</a>
+                <Link
+                  className="font-bold text-primary-400 hover:text-primary-500"
+                  href={{ href: "", hash: value.href }}
+                >
+                  {content}
                 </Link>
               );
             }
 
             if (value.href.startsWith("/")) {
               return (
-                <Link href={{ href: value.href }}>
-                  <a className="font-bold text-primary-400 hover:text-primary-500">{content}</a>
+                <Link
+                  className="font-bold text-primary-400 hover:text-primary-500"
+                  href={{ href: value.href }}
+                >
+                  {content}
                 </Link>
               );
             }
