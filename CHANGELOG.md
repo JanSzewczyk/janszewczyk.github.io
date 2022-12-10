@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.7.0...v1.8.0) (2022-12-10)
+
+
+### Features
+
+* **cv:** improve cv download file ([5604486](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/56044867930bed7c57f0320700c7352d8b1aadc8))
+
 # [1.7.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.6.3...v1.7.0) (2022-11-14)
 
 
