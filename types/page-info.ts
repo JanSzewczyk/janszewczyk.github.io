@@ -4,6 +4,7 @@ import { Experience } from "./experience";
 import { Project } from "./project";
 import { Skill } from "./skill";
 import { PortableTextBlock } from "@portabletext/types";
+import { File } from "./file";
 
 export interface PageInfo extends SanityBody {
   _type: "pageInfo";
@@ -19,6 +20,7 @@ export interface PageInfo extends SanityBody {
 }
 
 export interface AboutSectionInfo {
+  cv: File;
   description: PortableTextBlock[];
   profilePicture: Picture;
   title: string;

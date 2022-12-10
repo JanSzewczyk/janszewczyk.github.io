@@ -7,7 +7,11 @@ const query = groq`
     ...,
     aboutSection {
       ...,
-      profilePicture->
+      profilePicture->,
+      cv {
+        ...,
+        asset->
+      }
     },
     experiences[]-> {
       ...,

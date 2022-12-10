@@ -67,6 +67,12 @@ export default {
           title: "Profile Picture",
           type: "reference",
           to: [{ type: "picture" }]
+        },
+        {
+          name: "cv",
+          title: "CV file",
+          type: "file",
+          validation: (Rule) => Rule.required()
         }
       ],
       options: {
