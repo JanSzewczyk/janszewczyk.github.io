@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.8.0...v1.8.1) (2022-12-10)
+
+
+### Bug Fixes
+
+* fix typo ([ae532d4](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/ae532d48a975d313ab4b98c8cd97a9fe036a8011))
+
 # [1.8.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.7.0...v1.8.0) (2022-12-10)
 
 
