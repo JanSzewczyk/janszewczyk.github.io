@@ -37,8 +37,8 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
               <PortableText value={aboutInfo.description} />
             </div>
             <div className="mt-4">
-              <p className="">
-                Want to save information obout ME &mdash;{" "}
+              <p>
+                Want to save information about ME &mdash;{" "}
                 <a
                   className="inline-flex font-bold text-primary-400 hover:text-primary-500"
                   href={`${aboutInfo.cv.asset.url}?dl=${aboutInfo.cv.asset.originalFilename}`}
