@@ -3,19 +3,24 @@ import BackgroundCircles from "@components/BackgroundCircles";
 import Link from "next/link";
 import { HeroSectionInfo } from "@types";
 import { urlFor } from "../../sanity";
+import React from "react";
 
 interface HeroSectionProps {
   heroInfo: HeroSectionInfo;
 }
 
 function HeroSection({ heroInfo }: HeroSectionProps) {
-  const [text, index] = useTypewriter({
+  const [typeIndex, setTypeIndex] = React.useState<number>(0);
+  const [text] = useTypewriter({
     words: heroInfo.typings.map((t) => t.content),
     loop: true,
-    delaySpeed: 2000
+    delaySpeed: 2000,
+    onType: (index) => {
+      setTypeIndex(index);
+    }
   });
 
-  const currentIndex = ((index as number) - 1) % heroInfo.typings.length;
+  const currentIndex = typeIndex % heroInfo.typings.length;
   const isCode = heroInfo.typings[currentIndex]?.asCode ?? false;
 
   return (
@@ -36,7 +41,7 @@ function HeroSection({ heroInfo }: HeroSectionProps) {
 
           <h1 className="absolute top-8 max-w-3xl select-none px-8 text-3xl font-semibold md:text-5xl">
             {isCode ? (
-              <span className="font-code text-2xl text-yellow-500 md:text-4xl">{text}</span>
+              <span className="font-code text-2xl text-warning-500 md:text-4xl">{text}</span>
             ) : (
               <span>{text}</span>
             )}
