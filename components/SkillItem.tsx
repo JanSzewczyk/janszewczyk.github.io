@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Skill } from "@types";
 import { urlFor } from "../sanity";
 import { RefObject } from "react";
+import Image from "next/image";
 
 interface SkillProps {
   rootRef?: RefObject<Element>;
@@ -21,11 +22,15 @@ function SkillItem({ index = 0, skill, rootRef }: SkillProps) {
       viewport={{ once: true, root: rootRef }}
       className="group relative flex h-20 w-20 cursor-pointer select-none sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32"
     >
-      <img
-        className="h-full w-full rounded-lg border border-gray-600 object-cover filter transition duration-300 ease-in-out group-hover:grayscale"
-        src={urlFor(skill.image.img).url()}
-        alt={skill.image.alt}
-      />
+      <div className="relative h-full w-full rounded-lg border border-gray-600 filter transition duration-300 ease-in-out group-hover:grayscale">
+        <Image
+          fill
+          className="rounded-lg object-cover"
+          src={urlFor(skill.image.img).url()}
+          alt={skill.image.alt}
+        />
+      </div>
+
       <div className="absolute z-0 h-full w-full rounded-lg opacity-0 transition duration-300 ease-in-out group-hover:bg-gray-500 group-hover:opacity-90">
         <div className="flex h-full items-center justify-center">
           <p className="text-3xl font-bold text-white opacity-100">{skill.progress}%</p>

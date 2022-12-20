@@ -5,6 +5,7 @@ import { Project } from "@types";
 import PortableText from "@components/PortableText";
 import { SocialIcon } from "react-social-icons";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 interface ProjectItemProps {
   index?: number;
@@ -37,23 +38,25 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
             url={project.linkToRepository}
           />
         </h3>
-        <p className="text-center text-lg text-typography-disabled md:text-xl">
+        <p className="text-lg text-center text-typography-disabled md:text-xl">
           {index + 1} of {projectsAmount}
         </p>
 
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           {project.technologies.map((tech) => (
-            <img
-              key={tech._id}
-              className="h-8 w-8 rounded-sm md:h-10 md:w-10"
-              src={urlFor(tech.image.img).width(255).height(255).url()}
-              alt={tech.image.alt}
-            />
+            <div key={tech._id} className="relative h-8 w-8 md:h-10 md:w-10">
+              <Image
+                className="rounded-sm"
+                src={urlFor(tech.image.img).width(255).height(255).url()}
+                alt={tech.image.alt}
+                fill
+              />
+            </div>
           ))}
         </div>
 
         <div className="scroll mt-4 overflow-y-auto px-4 md:mt-6">
-          <div className="text-center md:text-left md:text-lg">
+          <div className="md:text-lg text-center md:text-left">
             <PortableText value={project.summary} />
           </div>
         </div>
@@ -67,7 +70,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
               viewport={{ once: true }}
               href={project.linkToBuild}
               target="_blank"
-              className="flex flex-row items-center font-bold hover:text-primary-500 md:text-lg"
+              className="md:text-lg flex flex-row items-center font-bold hover:text-primary-500"
             >
               Let&apos;s check the demo <RocketLaunchIcon className="ml-2 h-5 w-5" />
             </motion.a>

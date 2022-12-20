@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HeroSectionInfo } from "@types";
 import { urlFor } from "../../sanity";
 import React from "react";
+import Image from "next/image";
 
 interface HeroSectionProps {
   heroInfo: HeroSectionInfo;
@@ -29,11 +30,15 @@ function HeroSection({ heroInfo }: HeroSectionProps) {
         <BackgroundCircles />
         <div className="relative flex w-full flex-col items-center justify-center">
           <div className="absolute -bottom-4">
-            <img
-              alt={heroInfo.heroPicture.alt}
-              className="relative mx-auto mb-6 h-32 w-32 rounded object-cover"
-              src={urlFor(heroInfo.heroPicture.img).url()}
-            />
+            <div className="relative mx-auto mb-6 h-32 w-32 md:h-52 md:w-52">
+              <Image
+                alt={heroInfo.heroPicture.alt}
+                className="rounded object-cover"
+                fill
+                src={urlFor(heroInfo.heroPicture.img).url()}
+              />
+            </div>
+
             <h2 className="select-none text-sm uppercase tracking-2 text-typography-secondary">
               {heroInfo.role}
             </h2>

@@ -11,6 +11,18 @@ import { GlobalInfo, PageInfo } from "@types";
 import { fetchGlobalInfo, fetchPageInfo } from "@api";
 import Footer from "@components/Footer";
 
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const pageInfo = await fetchPageInfo();
+  const globalInfo = await fetchGlobalInfo();
+
+  return {
+    props: {
+      pageInfo,
+      globalInfo
+    }
+  };
+};
+
 interface HomeProps {
   globalInfo: GlobalInfo;
   pageInfo: PageInfo;
@@ -39,15 +51,3 @@ function Home({ pageInfo, globalInfo }: HomeProps) {
 }
 
 export default Home;
-
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const pageInfo = await fetchPageInfo();
-  const globalInfo = await fetchGlobalInfo();
-
-  return {
-    props: {
-      pageInfo,
-      globalInfo
-    }
-  };
-};
