@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.8.1...v1.8.2) (2022-12-20)
+
+
+### Bug Fixes
+
+* typing mechanism ([cf1ec67](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/cf1ec6714d099d4c8acef84dbbae205952aac3ff))
+
 ## [1.8.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.8.0...v1.8.1) (2022-12-10)
 
 
