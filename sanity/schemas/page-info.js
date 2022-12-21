@@ -114,7 +114,7 @@ export default {
         },
         {
           name: "phoneNumber",
-          title: "PhoneNumber",
+          title: "Phone Number",
           type: "string"
         },
         {
