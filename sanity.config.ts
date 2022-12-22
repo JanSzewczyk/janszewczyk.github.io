@@ -5,7 +5,7 @@ import { schemaTypes } from "./schemas";
 import { theme } from "./styles/sanity/theme";
 
 export default defineConfig({
-  basePath: "/studio",
+  basePath: "/sanity",
   name: "default",
   title: "janszewczyk.github.io",
 
