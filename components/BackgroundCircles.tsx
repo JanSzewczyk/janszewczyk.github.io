@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 
-interface BackgroundCirclesProps {}
-
-function BackgroundCircles({}: BackgroundCirclesProps) {
+function BackgroundCircles() {
   return (
     <motion.div
       className="absolute flex items-center justify-center"
