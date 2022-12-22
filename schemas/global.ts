@@ -38,11 +38,6 @@ export default defineType({
           title: "Company Name",
           type: "string",
           validation: (Rule) => Rule.required()
-        }),
-        defineField({
-          name: "test",
-          title: "test field",
-          type: "string"
         })
       ],
       options: {
