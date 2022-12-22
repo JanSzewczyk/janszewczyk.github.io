@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.8.2...v1.9.0) (2022-12-22)
+
+
+### Features
+
+* **sanity:** rebuild schemas - ts ([430e4e8](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/430e4e84825bcfd7a11bf3826769acb772e3a36a))
+* **sanity:** set up `sanity` configuration ([9963ca1](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/9963ca12c3772d856898d992f8e9e062cbcd996b))
+
 ## [1.8.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.8.1...v1.8.2) (2022-12-20)
 
 
