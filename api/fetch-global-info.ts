@@ -1,6 +1,6 @@
 import { groq } from "next-sanity";
-import { sanityClient } from "../sanity";
 import { GlobalInfo } from "@types";
+import { client } from "../lib/sanity.client";
 
 const query = groq`
   *[_type == "global"][0] {
@@ -13,5 +13,5 @@ const query = groq`
 `;
 
 export async function fetchGlobalInfo(): Promise<GlobalInfo> {
-  return await sanityClient.fetch<GlobalInfo>(query);
+  return await client.fetch<GlobalInfo>(query);
 }

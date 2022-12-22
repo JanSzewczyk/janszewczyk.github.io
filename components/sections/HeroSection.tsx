@@ -2,9 +2,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "@components/BackgroundCircles";
 import Link from "next/link";
 import { HeroSectionInfo } from "@types";
-import { urlFor } from "../../sanity";
 import React from "react";
 import Image from "next/image";
+import { urlFor } from "../../lib/sanity.client";
 
 interface HeroSectionProps {
   heroInfo: HeroSectionInfo;

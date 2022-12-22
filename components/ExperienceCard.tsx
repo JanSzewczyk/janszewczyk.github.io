@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Experience } from "@types";
-import { urlFor } from "../sanity";
 import Image from "next/image";
 import React from "react";
+import { urlFor } from "../lib/sanity.client";
 
 interface ExperienceCardProps {
   experience: Experience;
