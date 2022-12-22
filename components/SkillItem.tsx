@@ -17,7 +17,7 @@ function SkillItem({ index = 0, skill, rootRef }: SkillProps) {
         x: 100,
         opacity: 0
       }}
-      transition={{ duration: 1 + index * 1 }}
+      transition={{ duration: 0.5 + index * 0.5 }}
       whileInView={{ opacity: [0, 0, 0, 0, 0, 1], x: [100, 100, 100, 200, 200, 0] }}
       viewport={{ once: true, root: rootRef }}
       className="group relative flex h-20 w-20 cursor-pointer select-none sm:h-24 sm:w-24 md:h-28 md:w-28 xl:h-32 xl:w-32"

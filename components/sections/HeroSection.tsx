@@ -1,3 +1,5 @@
+"use client";
+
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "@components/BackgroundCircles";
 import Link from "next/link";

@@ -13,5 +13,5 @@ const query = groq`
 `;
 
 export async function fetchGlobalInfo(): Promise<GlobalInfo> {
-  return await client.fetch<GlobalInfo>(query);
+  return await client.fetch<GlobalInfo>(query, { cache: "force-cache" });
 }

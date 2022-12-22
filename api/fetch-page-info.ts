@@ -41,5 +41,5 @@ const query = groq`
 `;
 
 export async function fetchPageInfo(): Promise<PageInfo> {
-  return await client.fetch<PageInfo>(query);
+  return await client.fetch<PageInfo>(query, { cache: "force-cache" });
 }

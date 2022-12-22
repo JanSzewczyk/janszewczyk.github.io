@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowDownOnSquareIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { AboutSectionInfo } from "@types";

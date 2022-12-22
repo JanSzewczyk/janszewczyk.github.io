@@ -1,5 +1,4 @@
-import type { GetStaticProps } from "next";
-import Head from "next/head";
+import { fetchGlobalInfo, fetchPageInfo } from "@api";
 import Header from "@components/Header";
 import HeroSection from "@components/sections/HeroSection";
 import AboutSection from "@components/sections/AboutSection";
@@ -7,34 +6,14 @@ import WorkExperienceSection from "@components/sections/WorkExperienceSection";
 import SkillsSection from "@components/sections/SkillsSection";
 import ProjectsSection from "@components/sections/ProjectsSection";
 import ContactSection from "@components/sections/ContactSection";
-import { GlobalInfo, PageInfo } from "@types";
-import { fetchGlobalInfo, fetchPageInfo } from "@api";
 import Footer from "@components/Footer";
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+export default async function Page() {
   const pageInfo = await fetchPageInfo();
   const globalInfo = await fetchGlobalInfo();
 
-  return {
-    props: {
-      pageInfo,
-      globalInfo
-    }
-  };
-};
-
-interface HomeProps {
-  globalInfo: GlobalInfo;
-  pageInfo: PageInfo;
-}
-
-function Home({ pageInfo, globalInfo }: HomeProps) {
   return (
     <main className="scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto">
-      <Head>
-        <title>Jan Szewczyk`s portfolio</title>
-      </Head>
-
       <Header headerInfo={globalInfo.header} />
 
       <HeroSection heroInfo={pageInfo.heroSection} />
@@ -49,5 +28,3 @@ function Home({ pageInfo, globalInfo }: HomeProps) {
     </main>
   );
 }
-
-export default Home;
