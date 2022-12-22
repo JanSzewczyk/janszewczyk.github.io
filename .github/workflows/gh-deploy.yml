@@ -47,7 +47,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build 🏗️
-        run: yarn next build
+        run: yarn build
 
       #      - name: Static HTML export with Next.js
       #        run: yarn next export
@@ -55,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: .next
+          path: ./.next
 
   deploy:
     environment:
