@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.9.0...v1.9.1) (2022-12-22)
+
+
+### Bug Fixes
+
+* **sanity:** fix sanity configuration ([d6c43d6](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/d6c43d66220a0b744d475d5acf1b752aa79c4407))
+
 # [1.9.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.8.2...v1.9.0) (2022-12-22)
 
 
