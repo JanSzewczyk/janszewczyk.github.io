@@ -1,3 +1,10 @@
+## [1.9.3](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.9.2...v1.9.3) (2022-12-22)
+
+
+### Bug Fixes
+
+* change sanity route name ([b062f95](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/b062f95cd09be6552bc4e218dbf9b0b4f3b81346))
+
 ## [1.9.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.9.1...v1.9.2) (2022-12-22)
 
 
