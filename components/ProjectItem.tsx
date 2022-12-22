@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { urlFor } from "../sanity";
 import React from "react";
 import { Project } from "@types";
 import PortableText from "@components/PortableText";
 import { SocialIcon } from "react-social-icons";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import { urlFor } from "../lib/sanity.client";
 
 interface ProjectItemProps {
   index?: number;

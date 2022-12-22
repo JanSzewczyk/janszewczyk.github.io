@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Skill } from "@types";
-import { urlFor } from "../sanity";
 import { RefObject } from "react";
 import Image from "next/image";
+import { urlFor } from "../lib/sanity.client";
 
 interface SkillProps {
   rootRef?: RefObject<Element>;
