@@ -6,7 +6,7 @@ import { theme } from "./styles/sanity/theme";
 
 export default defineConfig({
   basePath: "/studio",
-  name: "janszewczyk-github-io",
+  name: "default",
   title: "janszewczyk.github.io",
 
   projectId: "qy853ayl",
