@@ -29,10 +29,7 @@ jobs:
         run: yarn lint
 
       - name: Build 🏗️
-        run: yarn next build
-
-  #      - name: Static HTML export with Next.js
-  #        run: yarn next export
+        run: yarn build
 
   release:
     name: Github Release
