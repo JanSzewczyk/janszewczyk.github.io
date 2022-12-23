@@ -3,7 +3,6 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
-import Link from "next/link";
 import { HeaderInfo } from "@types";
 
 interface HeaderProps {
@@ -41,7 +40,7 @@ function Header({ headerInfo }: HeaderProps) {
         ))}
       </motion.div>
 
-      <Link href={{ href: "", hash: "contact" }} aria-label="Link To Contact">
+      <a href="#contact" aria-label="Link To Contact">
         <motion.div
           initial={{
             y: -300,
@@ -61,7 +60,7 @@ function Header({ headerInfo }: HeaderProps) {
           <EnvelopeIcon className="h-7 w-7" />
           <p className="hidden pl-2 text-sm uppercase md:inline-flex">{headerInfo.contactLabel}</p>
         </motion.div>
-      </Link>
+      </a>
     </header>
   );
 }

@@ -2,7 +2,6 @@
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "@components/BackgroundCircles";
-import Link from "next/link";
 import { HeroSectionInfo } from "@types";
 import React from "react";
 import Image from "next/image";
@@ -56,18 +55,18 @@ function HeroSection({ heroInfo }: HeroSectionProps) {
           </h1>
         </div>
         <div className="absolute bottom-8 sm:bottom-2">
-          <Link href={{ hash: "about" }}>
+          <a href="#about">
             <button className="button-hero">About</button>
-          </Link>
-          <Link href={{ hash: "experience" }}>
+          </a>
+          <a href="#experience">
             <button className="button-hero">Experience</button>
-          </Link>
-          <Link href={{ hash: "skills" }}>
+          </a>
+          <a href="#skills">
             <button className="button-hero">Skills</button>
-          </Link>
-          <Link href={{ hash: "projects" }}>
+          </a>
+          <a href="#projects">
             <button className="button-hero">Projects</button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

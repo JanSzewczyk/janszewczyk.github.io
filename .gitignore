@@ -40,5 +40,8 @@ next-env.d.ts
 # WebStorm
 .idea
 
+# VS Code
+.vscode
+
 # sanity
 /.sanity
