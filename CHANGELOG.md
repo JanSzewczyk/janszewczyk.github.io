@@ -8,6 +8,23 @@
 * **gh_action:** fix release action ([7bc5d2b](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/7bc5d2bc433451043264ea544b25c79ef13775e4))
 * gh-page deploy config ([7816fbc](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/7816fbc0a87d3080b80d0a607d51e9ea0a88533e))
 * test fix ([fd66a24](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/fd66a244479b61e10d369f05237ae38b4e65f399))
+* test version ([4a0e9cc](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/4a0e9cc775aad060a457c9ab433b08bfdb2a0d61))
+
+
+### Features
+
+* **next:** rebuild application to use `app` feature ([0fb7f57](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/0fb7f5758e4e445acef10aeeef3875b4fc4bb1a3))
+
+# [1.10.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.9.3...v1.10.0) (2022-12-23)
+
+
+### Bug Fixes
+
+* `actions/upload-pages-artifact path ([58138a2](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/58138a2b9d1723abac98b4aa4fe158adc3107a18))
+* **gh_action:** fix artifact ([b9ef736](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/b9ef73692ab4de9f2caa732b24b694dded090caf))
+* **gh_action:** fix release action ([7bc5d2b](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/7bc5d2bc433451043264ea544b25c79ef13775e4))
+* gh-page deploy config ([7816fbc](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/7816fbc0a87d3080b80d0a607d51e9ea0a88533e))
+* test fix ([fd66a24](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/fd66a244479b61e10d369f05237ae38b4e65f399))
 
 
 ### Features
