@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.10.1...v1.10.2) (2022-12-23)
+
+
+### Bug Fixes
+
+* navigation links ([758887f](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/758887f5c7f956c1764b7fd46b9f2827917661fa))
+
 ## [1.10.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.10.0...v1.10.1) (2022-12-23)
 
 
