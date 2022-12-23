@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.10.0...v1.10.1) (2022-12-23)
+
+
+### Bug Fixes
+
+* remove vs code files ([df3c71d](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/df3c71d67f8a93ebd98c0ef1e7b60f5c7445278d))
+
 # [1.10.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.9.3...v1.10.0) (2022-12-23)
 
 
