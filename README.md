@@ -44,7 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Demo
 
-[See DEMO](https://janszewczyk.github.io)
+[See DEMO](https://janszewczyk.vercel.app)
 
 ## Changelog
 
