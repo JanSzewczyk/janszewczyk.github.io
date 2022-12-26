@@ -2,7 +2,7 @@ import { buildLegacyTheme } from "sanity";
 
 const props = {
   "--my-white": "rgb(250, 250, 250)",
-  "--my-black": "rgb(28, 28, 28)",
+  "--my-black": "rgb(39, 39, 39)",
   "--my-typography": "rgb(242, 242, 242)",
   "--my-blue": "rgb(21, 143, 255)",
   "--my-red": "rgb(247, 65, 64)",
@@ -19,7 +19,7 @@ export const theme = buildLegacyTheme({
   "--gray": props["--my-gray"],
   "--gray-base": props["--my-gray"],
 
-  "--component-bg": "rgb(39, 39, 39)",
+  "--component-bg": props["--my-black"],
   "--component-text-color": props["--my-typography"],
 
   /* Brand */
