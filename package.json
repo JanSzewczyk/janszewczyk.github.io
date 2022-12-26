@@ -21,7 +21,7 @@
     "next-sanity": "^3.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.39.3",
+    "react-hook-form": "^7.41.1",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
     "sanity": "^3.1.2",
