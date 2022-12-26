@@ -29,7 +29,9 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
         <SectionTitle title="Contact" />
 
         <div className="flex flex-col gap-10">
-          <h3 className="text-center text-3xl font-semibold md:text-4xl">{contactInfo.title}</h3>
+          <h3 className="typography-heading-4 text-center md:typography-heading-3">
+            {contactInfo.title}
+          </h3>
 
           <div className="space-y-8">
             <a
@@ -37,7 +39,7 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
               href={`tel:${contactInfo.phoneNumber.replaceAll(" ", "")}`}
             >
               <PhoneIcon className="h-7 w-7 text-primary-500/80" />
-              <p className="text-xl">{contactInfo.phoneNumber}</p>
+              <p className="typography-heading-6">{contactInfo.phoneNumber}</p>
             </a>
 
             <a
@@ -45,12 +47,12 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
               href={`mailto:${contactInfo.email}`}
             >
               <EnvelopeIcon className="h-7 w-7 text-primary-500/80" />
-              <p className="text-xl">{contactInfo.email}</p>
+              <p className="typography-heading-6">{contactInfo.email}</p>
             </a>
 
             <div className="flex items-center justify-center gap-5">
               <MapPinIcon className="h-7 w-7 text-primary-500/80" />
-              <p className="text-xl">{contactInfo.address}</p>
+              <p className="typography-heading-6">{contactInfo.address}</p>
             </div>
           </div>
 

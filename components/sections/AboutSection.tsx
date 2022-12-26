@@ -34,8 +34,8 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
           />
 
           <div className="px-0 md:px-10">
-            <h3 className="mb-8 text-3xl font-semibold md:text-4xl">{aboutInfo.title}</h3>
-            <div className="text-md">
+            <h3 className="typography-heading-4 mb-8 md:typography-heading-3">{aboutInfo.title}</h3>
+            <div className="typography-body-2 md:typography-body-1">
               <PortableText value={aboutInfo.description} />
             </div>
             <div className="mt-4">

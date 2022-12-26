@@ -11,7 +11,7 @@
   }
 
   .button-hero {
-    @apply rounded border border-transparent px-4 py-2 text-sm uppercase tracking-widest text-gray-300 transition-all
+    @apply typography-button rounded border border-transparent px-4 py-2 uppercase text-gray-300 transition-all
     hover:border-primary-500/40 hover:bg-gray-900/60 hover:text-typography-primary md:px-6;
   }
 }

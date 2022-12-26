@@ -17,7 +17,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
   return (
     <div className="project-item-width flex w-[calc(100vw-3rem)] flex-1 snap-center flex-col items-center md:w-[calc(100vw-5.5rem)] xl:w-300">
       <motion.img
-        initial={{ opacity: 0, y: -150 }}
+        initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
@@ -26,7 +26,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         alt={project.image.alt}
       />
       <div className="flex max-w-3xl flex-col overflow-y-auto">
-        <h3 className="text-primary px-2 text-center text-3xl font-semibold md:text-4xl">
+        <h3 className=" typography-heading-4 px-2 text-center md:typography-heading-3">
           <span>{project.title.trim()}</span>
           <SocialIcon
             aria-label={project.title}
@@ -38,7 +38,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
             url={project.linkToRepository}
           />
         </h3>
-        <p className="text-lg text-center text-typography-disabled md:text-xl">
+        <p className="typography-subtitle-1 text-center text-typography-disabled md:typography-heading-6">
           {index + 1} of {projectsAmount}
         </p>
 
@@ -56,7 +56,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         </div>
 
         <div className="scroll mt-4 overflow-y-auto px-4 md:mt-6">
-          <div className="md:text-lg text-center md:text-left">
+          <div className="typography-body-2 text-center md:typography-body-1 md:text-left">
             <PortableText value={project.summary} />
           </div>
         </div>
@@ -70,7 +70,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
               viewport={{ once: true }}
               href={project.linkToBuild}
               target="_blank"
-              className="md:text-lg flex flex-row items-center font-bold hover:text-primary-500"
+              className="typography-button flex flex-row items-center hover:text-primary-500"
             >
               Let&apos;s check the demo <RocketLaunchIcon className="ml-2 h-5 w-5" />
             </motion.a>

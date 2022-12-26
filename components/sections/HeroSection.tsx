@@ -40,14 +40,14 @@ function HeroSection({ heroInfo }: HeroSectionProps) {
               />
             </div>
 
-            <h2 className="select-none text-sm uppercase tracking-2 text-typography-secondary">
+            <h2 className="typography-subtitle-1 select-none uppercase text-typography-secondary md:typography-heading-6">
               {heroInfo.role}
             </h2>
           </div>
 
-          <h1 className="absolute top-8 max-w-3xl select-none px-8 text-3xl font-semibold md:text-5xl">
+          <h1 className="typography-heading-3 absolute top-8 max-w-3xl select-none px-8 md:typography-heading-2">
             {isCode ? (
-              <span className="font-code text-2xl text-warning-500 md:text-4xl">{text}</span>
+              <span className="typography-code text-2xl text-warning-500 md:text-3xl">{text}</span>
             ) : (
               <span>{text}</span>
             )}
