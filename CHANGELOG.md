@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.10.2...v1.11.0) (2022-12-26)
+
+
+### Features
+
+* **typography:** add design system typography ([beec097](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/beec097504254af99de798238530c214e2edc775))
+
 ## [1.10.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.10.1...v1.10.2) (2022-12-23)
 
 
