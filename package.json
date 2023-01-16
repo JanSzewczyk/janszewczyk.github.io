@@ -18,7 +18,7 @@
     "@szum-tech/design-system": "^1.1.8",
     "framer-motion": "^7.6.6",
     "next": "^13.1.0",
-    "next-sanity": "^3.1.5",
+    "next-sanity": "^4.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.39.3",
