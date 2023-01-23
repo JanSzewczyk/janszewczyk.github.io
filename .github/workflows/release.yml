@@ -28,9 +28,6 @@ jobs:
       - name: Run ESLint 🧹
         run: yarn lint
 
-      - name: Build 🏗️
-        run: yarn build
-
   release:
     name: Github Release
     runs-on: ${{ matrix.os }}
