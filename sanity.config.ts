@@ -4,13 +4,16 @@ import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schemas";
 import { theme } from "./styles/sanity/theme";
 
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
+
 export default defineConfig({
-  basePath: "/sanity",
+  basePath: "/studio",
   name: "default",
   title: "janszewczyk.github.io",
 
-  projectId: "qy853ayl",
-  dataset: "production",
+  projectId,
+  dataset,
 
   plugins: [deskTool(), visionTool()],
 
