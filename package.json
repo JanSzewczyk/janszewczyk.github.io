@@ -14,7 +14,7 @@
     "@heroicons/react": "^2.0.14",
     "@portabletext/react": "^2.0.0",
     "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.2.4",
+    "@sanity/vision": "^3.2.6",
     "@szum-tech/design-system": "^1.1.8",
     "framer-motion": "^8.5.5",
     "next": "^13.1.4",
