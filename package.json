@@ -50,7 +50,7 @@
     "prettier-plugin-tailwindcss": "^0.2.2",
     "semantic-release": "^20.1.0",
     "tailwind-scrollbar": "^2.1.0",
-    "tailwindcss": "^3.2.6",
+    "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5"
   }
 }
