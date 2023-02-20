@@ -36,7 +36,7 @@
     "@semantic-release/npm": "^9.0.2",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@tailwindcss/container-queries": "^0.1.0",
-    "@types/node": "^18.13.0",
+    "@types/node": "^18.14.0",
     "@types/prettier": "^2.7.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
