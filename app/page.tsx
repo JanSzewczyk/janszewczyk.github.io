@@ -13,7 +13,7 @@ export default async function Page() {
   const globalInfo = await fetchGlobalInfo();
 
   return (
-    <main className="scroll z-0 h-screen snap-y snap-mandatory overflow-y-auto">
+    <main className="scroll h-screen snap-y snap-mandatory overflow-y-auto">
       <Header headerInfo={globalInfo.header} />
 
       <HeroSection heroInfo={pageInfo.heroSection} />
