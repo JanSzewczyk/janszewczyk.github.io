@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.11.0...v1.11.1) (2023-02-27)
+
+
+### Bug Fixes
+
+* fix screen height on mobile device ([acd78a7](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/acd78a76a771be87885cc8d9459b7cd8f825d49c))
+
 # [1.11.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.10.2...v1.11.0) (2022-12-26)
 
 
