@@ -1,3 +1,15 @@
+<!-- markdownlint-disable --><!-- textlint-disable -->
+# 📓 Changelog
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.11.2](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.11.1...v1.11.2) (2023-02-27)
+
+
+### Bug Fixes
+
+* fix app spacings and improve app header ([169fad8](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/169fad82052acaccaf280dcfea79bf10374bcdf9))
+
 ## [1.11.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.11.0...v1.11.1) (2023-02-27)
 
 
