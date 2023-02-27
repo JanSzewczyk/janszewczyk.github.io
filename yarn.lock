@@ -4748,6 +4748,15 @@ fraction.js@^4.2.0:
   resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.2.0.tgz#448e5109a313a3527f5a3ab2119ec4cf0e0e2950"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
+framer-motion@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.0.1.tgz#62cadfb9ed80599ac9b1c1699dc4e1164c3133c5"
+  integrity sha512-/N7gBA9gH8PkStyNQ67P/lx8UhL/7Y8z9Ku7FfgOF77sSG8wu8781kX7I5ZUgflRRtQXo8qH4Rev23004G1zcQ==
+  dependencies:
+    tslib "^2.4.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 framer-motion@^6.3.0:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.5.1.tgz#802448a16a6eb764124bf36d8cbdfa6dd6b931a7"
@@ -4770,17 +4779,6 @@ framer-motion@^7.10.2:
     "@motionone/dom" "^10.15.3"
     hey-listen "^1.0.8"
     tslib "2.4.0"
-  optionalDependencies:
-    "@emotion/is-prop-valid" "^0.8.2"
-
-framer-motion@^9.0.7:
-  version "9.0.7"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-9.0.7.tgz#5fe5c1d43e01c458ed4838687901c6c520fe452c"
-  integrity sha512-2n4REUNiu/AsX2fZOp8Z/wnL8XXi2kXrqmCi9UfaydpXgGLnbwq61m9PjOuzECj6iedHNRCvqAMsDIeDzeLSdw==
-  dependencies:
-    "@motionone/dom" "^10.15.3"
-    hey-listen "^1.0.8"
-    tslib "^2.4.0"
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
