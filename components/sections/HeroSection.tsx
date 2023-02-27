@@ -5,7 +5,7 @@ import BackgroundCircles from "@components/BackgroundCircles";
 import { HeroSectionInfo } from "@types";
 import React from "react";
 import Image from "next/image";
-import { urlFor } from "../../lib/sanity.client";
+import { urlFor } from "@lib/sanity.client";
 
 interface HeroSectionProps {
   heroInfo: HeroSectionInfo;
@@ -54,7 +54,7 @@ function HeroSection({ heroInfo }: HeroSectionProps) {
             <Cursor cursorColor="rgb(var(--primary-500))" />
           </h1>
         </div>
-        <div className="absolute bottom-8 sm:bottom-2">
+        <div className="absolute bottom-2">
           <a href="#about">
             <button className="button-hero">About</button>
           </a>
