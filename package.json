@@ -15,7 +15,7 @@
     "@portabletext/react": "^2.0.1",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.4.0",
-    "@szum-tech/design-system": "^1.5.4",
+    "@szum-tech/design-system": "^1.5.5",
     "framer-motion": "^9.0.7",
     "next": "^13.1.6",
     "next-sanity": "^4.1.5",

@@ -1,4 +1,4 @@
-@import "@szum-tech/design-system/tailwindcss/global.css";
+@import "@szum-tech/design-system/theme/global.css";
 
 @tailwind base;
 @tailwind components;

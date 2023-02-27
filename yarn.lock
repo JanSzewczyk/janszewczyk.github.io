@@ -2489,10 +2489,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@szum-tech/design-system@^1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.5.4.tgz#57c088369395d3302a59a8ca0566e58800ce09e6"
-  integrity sha512-ypTFGZfxv0epqokdh/1/ngw7SjnL3VskPBPH+eMglDQjBcl97bKhiG3jrRc+cnmHrzTmzVvtfwoaBZwDtrEMrg==
+"@szum-tech/design-system@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.5.5.tgz#ffbd88b02b673c031ca5b9cc2c739bba43baaab5"
+  integrity sha512-qLQQbGWI0d8STAVWFqOa69+ehH6oieBBIHMkpwv84n9Af55ABK5KSDsUU82Snhi878IH+Qh6KTkIE0sRvVTE8Q==
   dependencies:
     "@heroicons/react" "^2.0.15"
     class-variance-authority "^0.4.0"
