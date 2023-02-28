@@ -45,6 +45,12 @@ Technologies used to build this application:
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/dev/typescript)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/dev/tailwindcss)
 
+I also used my packages: 
+
+[![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/@szum-tech/design-system)](https://www.npmjs.com/package/@szum-tech/design-system)
+[![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/dev/@szum-tech/semantic-release-preset)](https://www.npmjs.com/package/@szum-tech/semantic-release-preset)
+
+
 # Setup
 
 Below you find all scripts to clone, run and build this application.
