@@ -12,6 +12,7 @@
 # Table of contents
 
 - [About The App](#about-the-app)
+- [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
     - [Clone repo](#clone-repo)   
@@ -26,6 +27,10 @@
 # About The App
 
 My portfolio website was created using [Next.JS](https://nextjs.org/) 13, [React](https://reactjs.org/) and the [Tailwindcss](https://tailwindcss.com/) library. The content of the website is managed using [Sanity.io](https://www.sanity.io/) CMS.
+
+# Screenshots
+
+<img width="1666" alt="image" src="https://user-images.githubusercontent.com/29024606/221841999-596a2322-df66-4338-89b8-48ff140e04a6.png">
 
 # Technologies
 
