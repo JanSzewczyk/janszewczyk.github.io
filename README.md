@@ -5,7 +5,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/JanSzewczyk/janszewczyk.github.io)](https://github.com/JanSzewczyk/janszewczyk.github.io/issues)
 ![GitHub Repo stars](https://img.shields.io/github/stars/JanSzewczyk/janszewczyk.github.io?style=social)
 
-[![released](https://github.com/JanSzewczyk/janszewczyk.github.io/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/JanSzewczyk/janszewczyk.github.io/actions/workflows/publish.yml)
+[![Publish 🚀](https://github.com/JanSzewczyk/janszewczyk.github.io/actions/workflows/publish.yml/badge.svg)](https://github.com/JanSzewczyk/janszewczyk.github.io/actions/workflows/publish.yml)
 
 ---
 
