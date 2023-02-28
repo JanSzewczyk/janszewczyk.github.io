@@ -7,7 +7,6 @@
     "dev": "next dev",
     "lint": "next lint",
     "sanity:deploy": "sanity deploy",
-    "semantic-release": "semantic-release",
     "start": "next start"
   },
   "dependencies": {
