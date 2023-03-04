@@ -5,7 +5,8 @@ const keywords: string[] = [
   "Web Developer",
   "React Developer",
   "Szum-Tech",
-  "SzumTech"
+  "SzumTech",
+  "portfolio"
 ];
 
 export default function Head() {
@@ -15,7 +16,7 @@ export default function Head() {
 
       <meta
         name="description"
-        content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
+        content="Hi, my name is Jan Szewczyk and I am Software Developer - enjoy my portfolio website"
       />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
       <meta name="keywords" content={keywords.join(", ")} />
