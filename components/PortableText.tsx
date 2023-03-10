@@ -46,6 +46,9 @@ function PortableText({ value = [] }: PortableTextProps) {
               </a>
             );
           }
+        },
+        list: {
+          bullet: ({ children }) => <ul className="list-outside list-disc pl-6">{children}</ul>
         }
       }}
     />

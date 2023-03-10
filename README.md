@@ -15,12 +15,12 @@
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
-    - [Clone repo](#clone-repo)   
-    - [Install packages](#install-packages)   
-    - [Set envs](#set-envs)   
-    - [Run app](#run-app)   
-    - [Clone repo](#clone-repo)   
-    - [Build](#build)   
+  - [Clone repo](#clone-repo)
+  - [Install packages](#install-packages)
+  - [Set envs](#set-envs)
+  - [Run app](#run-app)
+  - [Clone repo](#clone-repo)
+  - [Build](#build)
 - [Demo](#demo)
 - [Changelog](#changelog)
 
@@ -45,11 +45,10 @@ Technologies used to build this application:
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/dev/typescript)
 ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/dev/tailwindcss)
 
-I also used my packages: 
+I also used my packages:
 
 [![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/@szum-tech/design-system)](https://www.npmjs.com/package/@szum-tech/design-system)
 [![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/JanSzewczyk/janszewczyk.github.io/dev/@szum-tech/semantic-release-preset)](https://www.npmjs.com/package/@szum-tech/semantic-release-preset)
-
 
 # Setup
 
@@ -71,7 +70,7 @@ yarn
 
 ## Set envs
 
-Before starting development server add all [environment variables](https://nextjs.org/docs/basic-features/environment-variables), all required variables are in [.env.example](https://github.com/JanSzewczyk/janszewczyk.github.io/blob/main/.env.example) file. 
+Before starting development server add all [environment variables](https://nextjs.org/docs/basic-features/environment-variables), all required variables are in [.env.example](https://github.com/JanSzewczyk/janszewczyk.github.io/blob/main/.env.example) file.
 
 ## Run app
 
@@ -81,23 +80,23 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-``` 
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Build 
+## Build
 
 ```bash
-npm run build 
-# or 
+npm run build
+# or
 yarn build
 ```
 
 To run build application in local environment, use:
 
 ```bash
-npm run start 
-# or 
+npm run start
+# or
 yarn start
 ```
 
