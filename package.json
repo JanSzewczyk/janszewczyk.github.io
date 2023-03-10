@@ -6,7 +6,6 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "sanity:deploy": "sanity deploy",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },
