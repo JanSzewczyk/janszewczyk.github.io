@@ -1,4 +1,5 @@
 import { defineField, defineType } from "sanity";
+import projectLink from "./objects/project-link";
 
 export default defineType({
   name: "project",
@@ -26,12 +27,6 @@ export default defineType({
       of: [{ type: "reference", to: { type: "skill" } }]
     }),
     defineField({
-      name: "linkToRepository",
-      title: "Link To Repository",
-      type: "url",
-      validation: (Rule) => Rule.required()
-    }),
-    defineField({
       name: "summary",
       title: "Summary",
       type: "array",
@@ -39,9 +34,10 @@ export default defineType({
       validation: (Rule) => Rule.required()
     }),
     defineField({
-      name: "linkToBuild",
-      title: "Link To Build",
-      type: "url"
+      name: "links",
+      title: "Project Links",
+      type: "array",
+      of: [projectLink]
     })
   ],
   preview: {
