@@ -29,6 +29,8 @@ type ProjectLinkItemProps = {
 export default function ProjectLinkItem({ projectLink }: ProjectLinkItemProps) {
   const config = PROJECT_ICON_CONFIG[projectLink.type];
 
+  const Icon = config.icon;
+
   return (
     <a
       href={projectLink.url}
@@ -36,7 +38,7 @@ export default function ProjectLinkItem({ projectLink }: ProjectLinkItemProps) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <config.icon className="h-6 w-6" />
+      <Icon className="h-4 w-4 md:h-6 md:w-6" />
       <span className="typography-body-1">{config.label}</span>
     </a>
   );
