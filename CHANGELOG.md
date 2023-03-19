@@ -1,16 +1,17 @@
 <!-- markdownlint-disable --><!-- textlint-disable -->
+
 # 📓 Changelog
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 # [1.12.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.11.2...v1.12.0) (2023-03-19)
 
-
 ### Features
 
-* **icons:** create services icons ([4d79d40](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/4d79d406c31918a010fa1acb922d1e4e128e5b30))
-* **sanity:** create project links configuration ([654f7da](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/654f7da4430c07652a42069db31edba9fb53313a))
-* update project links ([eac9a96](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/eac9a9660d7f2615ca9f7e8b096e1c01026d5001))
+- **icons:** create services icons ([4d79d40](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/4d79d406c31918a010fa1acb922d1e4e128e5b30))
+- **sanity:** create project links configuration ([654f7da](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/654f7da4430c07652a42069db31edba9fb53313a))
+- update project links ([eac9a96](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/eac9a9660d7f2615ca9f7e8b096e1c01026d5001))
 
 <!-- markdownlint-disable --><!-- textlint-disable -->
 

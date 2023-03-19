@@ -75,7 +75,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Eslint Check ⬣
-        run: yarn lint
+        run: yarn lint:ci
 
   type-check:
     name: TypeScript

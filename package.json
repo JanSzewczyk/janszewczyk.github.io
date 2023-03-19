@@ -6,6 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
+    "lint:ci": "next lint --max-warnings=0",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
     "start": "next start",

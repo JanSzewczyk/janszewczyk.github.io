@@ -12,3 +12,6 @@
 
 # VS Code
 /.vscode
+
+# Docs
+/CHANGELOG.md
