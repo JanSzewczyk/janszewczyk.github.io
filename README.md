@@ -19,7 +19,6 @@
   - [Install packages](#install-packages)
   - [Set envs](#set-envs)
   - [Run app](#run-app)
-  - [Clone repo](#clone-repo)
   - [Build](#build)
 - [Demo](#demo)
 - [Changelog](#changelog)
