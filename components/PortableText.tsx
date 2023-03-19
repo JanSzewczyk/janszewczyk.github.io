@@ -15,6 +15,7 @@ function PortableText({ value = [] }: PortableTextProps) {
           normal: ({ children }) => <p className="mb-2">{children}</p>
         },
         marks: {
+          code: ({ children }) => <code className="font-code">{children}</code>,
           link: ({ children, value }) => {
             const content = Array.isArray(children) ? children[0] : children;
 
@@ -41,7 +42,12 @@ function PortableText({ value = [] }: PortableTextProps) {
             }
 
             return (
-              <a className="font-bold text-primary-400 hover:text-primary-500" href={value.href}>
+              <a
+                className="font-bold text-primary-400 hover:text-primary-500"
+                href={value.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {children}
               </a>
             );
