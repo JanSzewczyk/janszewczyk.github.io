@@ -1,10 +1,10 @@
 import React from "react";
 
-type NpmIconProps = React.ComponentPropsWithoutRef<"svg">;
+type NpmIconProps = React.SVGProps<SVGSVGElement>;
 
-export default function NpmIcon({ fill = "currentColor", ...props }: NpmIconProps) {
+export default function NpmIcon(props: NpmIconProps) {
   return (
-    <svg viewBox="0 0 24 24" fill={fill} {...props}>
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

@@ -25,7 +25,7 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         alt={project.image.alt}
       />
       <div className="flex max-w-3xl flex-1 flex-col overflow-y-auto">
-        <h3 className=" typography-heading-5 text-center md:typography-heading-4">
+        <h3 className="typography-heading-5 text-center md:typography-heading-4">
           {project.title.trim()}
         </h3>
         <p className="typography-subtitle-1 text-center text-typography-disabled md:typography-heading-6">
