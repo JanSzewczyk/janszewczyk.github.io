@@ -1,4 +1,17 @@
 <!-- markdownlint-disable --><!-- textlint-disable -->
+# 📓 Changelog
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.12.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.12.0...v1.12.1) (2023-03-19)
+
+
+### Bug Fixes
+
+* **icons:** fix icons typings ([6dc932f](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/6dc932f7b8a6ae48028bd2df9a7ad35ff01b41fb))
+* **project-item:** fix project view styles ([14ae307](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/14ae307495f2cc7f8dcf3902574db5bf62360f6a))
+
+<!-- markdownlint-disable --><!-- textlint-disable -->
 
 # 📓 Changelog
 
