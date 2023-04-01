@@ -1,7 +1,8 @@
 "use client";
 
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { useForm } from "react-hook-form";
+
 import SectionTitle from "@components/SectionTitle";
 import { ContactSectionInfo } from "@types";
 

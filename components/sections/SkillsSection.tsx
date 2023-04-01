@@ -1,10 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Skill } from "@types";
-import SkillItem from "@components/SkillItem";
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import SectionTitle from "@components/SectionTitle";
+import SkillItem from "@components/SkillItem";
+import { Skill } from "@types";
 
 interface SkillsSectionProps {
   skills: Skill[];

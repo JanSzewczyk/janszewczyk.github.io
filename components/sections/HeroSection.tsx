@@ -1,11 +1,14 @@
 "use client";
 
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import BackgroundCircles from "@components/BackgroundCircles";
-import { HeroSectionInfo } from "@types";
 import React from "react";
+
 import Image from "next/image";
+
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+
+import BackgroundCircles from "@components/BackgroundCircles";
 import { urlFor } from "@lib/sanity.client";
+import { HeroSectionInfo } from "@types";
 
 interface HeroSectionProps {
   heroInfo: HeroSectionInfo;

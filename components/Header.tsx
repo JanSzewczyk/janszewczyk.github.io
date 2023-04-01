@@ -3,6 +3,7 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
+
 import { HeaderInfo } from "@types";
 
 interface HeaderProps {

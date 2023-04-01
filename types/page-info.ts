@@ -1,10 +1,11 @@
-import { SanityBody } from "./sanity-body";
-import { Picture } from "./picture";
-import { Experience } from "./experience";
-import { Project } from "./project";
-import { Skill } from "./skill";
 import { PortableTextBlock } from "@portabletext/types";
+
+import { Experience } from "./experience";
 import { File } from "./file";
+import { Picture } from "./picture";
+import { Project } from "./project";
+import { SanityBody } from "./sanity-body";
+import { Skill } from "./skill";
 
 export interface PageInfo extends SanityBody {
   _type: "pageInfo";

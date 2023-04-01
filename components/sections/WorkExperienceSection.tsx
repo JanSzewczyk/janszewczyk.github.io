@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import ExperienceCard from "@components/ExperienceCard";
-import { Experience } from "@types";
 import SectionTitle from "@components/SectionTitle";
+import { Experience } from "@types";
 
 interface WorkExperienceSectionProps {
   experiences: Experience[];

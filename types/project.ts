@@ -1,7 +1,8 @@
+import { PortableTextBlock } from "@portabletext/types";
+
+import { Picture } from "./picture";
 import { SanityBody } from "./sanity-body";
 import { Skill } from "./skill";
-import { Picture } from "./picture";
-import { PortableTextBlock } from "@portabletext/types";
 
 export interface Project extends SanityBody {
   image: Picture;

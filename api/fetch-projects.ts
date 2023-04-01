@@ -1,5 +1,7 @@
-import { Project } from "@types";
 import { groq } from "next-sanity";
+
+import { Project } from "@types";
+
 import { client } from "../lib/sanity.client";
 
 const query = groq`

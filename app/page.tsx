@@ -1,12 +1,12 @@
 import { fetchGlobalInfo, fetchPageInfo } from "@api";
-import Header from "@components/Header";
-import HeroSection from "@components/sections/HeroSection";
-import AboutSection from "@components/sections/AboutSection";
-import WorkExperienceSection from "@components/sections/WorkExperienceSection";
-import SkillsSection from "@components/sections/SkillsSection";
-import ProjectsSection from "@components/sections/ProjectsSection";
-import ContactSection from "@components/sections/ContactSection";
 import Footer from "@components/Footer";
+import Header from "@components/Header";
+import AboutSection from "@components/sections/AboutSection";
+import ContactSection from "@components/sections/ContactSection";
+import HeroSection from "@components/sections/HeroSection";
+import ProjectsSection from "@components/sections/ProjectsSection";
+import SkillsSection from "@components/sections/SkillsSection";
+import WorkExperienceSection from "@components/sections/WorkExperienceSection";
 
 export default async function Page() {
   const pageInfo = await fetchPageInfo();
