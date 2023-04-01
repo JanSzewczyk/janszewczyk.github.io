@@ -1,7 +1,9 @@
-import { ProjectLink, ProjectLinkType } from "@types";
-import { BookOpenIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
-import { GithubIcon, NpmIcon } from "@components/icons";
 import * as React from "react";
+
+import { BookOpenIcon, RocketLaunchIcon } from "@heroicons/react/24/solid";
+
+import { GithubIcon, NpmIcon } from "@components/icons";
+import { ProjectLink, ProjectLinkType } from "@types";
 
 const PROJECT_ICON_CONFIG: Record<ProjectLinkType, { label: string; icon: React.ElementType }> = {
   demo: {

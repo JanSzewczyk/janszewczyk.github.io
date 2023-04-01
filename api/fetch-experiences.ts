@@ -1,5 +1,7 @@
-import { Experience } from "@types";
 import { groq } from "next-sanity";
+
+import { Experience } from "@types";
+
 import { client } from "../lib/sanity.client";
 
 const query = groq`

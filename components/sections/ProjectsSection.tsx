@@ -1,10 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Project } from "@types";
-import SectionTitle from "@components/SectionTitle";
 import React from "react";
+
+import { motion } from "framer-motion";
+
 import ProjectItem from "@components/ProjectItem";
+import SectionTitle from "@components/SectionTitle";
+import { Project } from "@types";
 
 interface ProjectsSectionProps {
   projects: Project[];

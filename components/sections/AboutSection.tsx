@@ -2,9 +2,11 @@
 
 import { ArrowDownOnSquareIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import { AboutSectionInfo } from "@types";
-import SectionTitle from "@components/SectionTitle";
+
 import PortableText from "@components/PortableText";
+import SectionTitle from "@components/SectionTitle";
+import { AboutSectionInfo } from "@types";
+
 import { urlFor } from "../../lib/sanity.client";
 
 interface AboutSectionProps {

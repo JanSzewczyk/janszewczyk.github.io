@@ -1,7 +1,8 @@
 import { defineField, defineType } from "sanity";
-import heroSection from "./objects/hero-section";
+
 import aboutSection from "./objects/about-section";
 import contactSection from "./objects/contact-section";
+import heroSection from "./objects/hero-section";
 
 export default defineType({
   name: "pageInfo",

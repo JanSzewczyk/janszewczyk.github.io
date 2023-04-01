@@ -1,5 +1,6 @@
-import projectInfo from "../package.json";
 import { FooterInfo } from "@types";
+
+import projectInfo from "../package.json";
 
 interface FooterProps {
   footerInfo: FooterInfo;

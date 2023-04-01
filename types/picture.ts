@@ -1,5 +1,5 @@
-import { SanityBody } from "./sanity-body";
 import { Image } from "./image";
+import { SanityBody } from "./sanity-body";
 
 export interface Picture extends SanityBody {
   _type: "picture";

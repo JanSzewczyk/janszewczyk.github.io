@@ -1,10 +1,13 @@
-import { motion } from "framer-motion";
 import * as React from "react";
-import { Project } from "@types";
-import PortableText from "@components/PortableText";
+
 import Image from "next/image";
-import { urlFor } from "@lib/sanity.client";
+
+import { motion } from "framer-motion";
+
+import PortableText from "@components/PortableText";
 import ProjectLinkItem from "@components/ProjectLinkItem";
+import { urlFor } from "@lib/sanity.client";
+import { Project } from "@types";
 
 interface ProjectItemProps {
   index?: number;

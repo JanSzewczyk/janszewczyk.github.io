@@ -1,6 +1,6 @@
+import { Picture } from "./picture";
 import { SanityBody } from "./sanity-body";
 import { Skill } from "./skill";
-import { Picture } from "./picture";
 
 export interface Experience extends SanityBody {
   _type: "experience";

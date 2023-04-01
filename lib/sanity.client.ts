@@ -1,7 +1,7 @@
-import { createClient } from "next-sanity";
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
-import { ImageUrlBuilder } from "@sanity/image-url/lib/types/builder";
 import createImageUrlBuilder from "@sanity/image-url";
+import { ImageUrlBuilder } from "@sanity/image-url/lib/types/builder";
+import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import { createClient } from "next-sanity";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;

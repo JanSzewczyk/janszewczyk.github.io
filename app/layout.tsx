@@ -1,5 +1,6 @@
-import "../styles/globals.css";
 import { Metadata } from "next";
+
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Jan Szewczyk`s portfolio",
