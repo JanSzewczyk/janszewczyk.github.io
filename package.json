@@ -35,7 +35,7 @@
     "@szum-tech/semantic-release-preset": "^1.5.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.31",
-    "@types/react-dom": "^18.0.11",
+    "@types/react-dom": "^18.2.1",
     "@types/semantic-release": "^20.0.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.37.0",
