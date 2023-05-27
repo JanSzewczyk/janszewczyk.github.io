@@ -12,8 +12,7 @@ export default defineType({
     defineField({
       name: "name",
       title: "Name",
-      type: "string",
-      validation: (Rule) => Rule.required()
+      type: "string"
     }),
     heroSection,
     aboutSection,

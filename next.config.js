@@ -2,7 +2,9 @@
 module.exports = {
   reactStrictMode: true,
   experimental: {
-    appDir: true
+    appDir: true,
+    typedRoutes: true,
+    serverComponentsExternalPackages: ["@szum-tech/design-system"]
   },
   images: {
     dangerouslyAllowSVG: true,

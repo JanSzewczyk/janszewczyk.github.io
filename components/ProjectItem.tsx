@@ -28,10 +28,10 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         alt={project.image.alt}
       />
       <div className="flex max-w-3xl flex-1 flex-col overflow-y-auto">
-        <h3 className="typography-heading-5 text-center md:typography-heading-4">
+        <h3 className="text-center typography-heading-5 md:typography-heading-4">
           {project.title.trim()}
         </h3>
-        <p className="typography-subtitle-1 text-center text-typography-disabled md:typography-heading-6">
+        <p className="text-center text-gray-300 typography-subtitle-1 md:typography-heading-6">
           {index + 1} of {projectsAmount}
         </p>
 
@@ -49,8 +49,8 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
         </div>
 
         <div className="mt-4 flex flex-1 flex-col gap-4 overflow-y-auto md:mt-6 md:flex-row">
-          <div className="scroll flex-1 overflow-y-auto px-2 md:px-4">
-            <div className="typography-body-2 text-center md:typography-body-1 md:text-left">
+          <div className="flex-1 overflow-y-auto px-2 scroll md:px-4">
+            <div className="text-center typography-body-2 md:text-left md:typography-body-1">
               <PortableText value={project.summary} />
             </div>
           </div>
