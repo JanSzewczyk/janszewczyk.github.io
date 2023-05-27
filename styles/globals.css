@@ -5,13 +5,8 @@
 @tailwind utilities;
 
 @layer components {
-  .contact-input {
-    @apply w-full border border-gray-700 bg-black px-4 py-2 text-typography-primary placeholder-typography-disabled outline-none
-    focus:border-primary-500 hover:border-gray-600 hover:focus:border-primary-500;
-  }
-
-  .button-hero {
-    @apply typography-button rounded border border-transparent px-4 py-2 uppercase text-gray-300 transition-all
-    hover:border-primary-500/40 hover:bg-gray-900/60 hover:text-typography-primary md:px-6;
-  }
+  /*.button-hero {*/
+  /*  @apply typography-button rounded border border-transparent px-4 py-2 uppercase text-gray-300 transition-all*/
+  /*  hover:border-primary-500/40 hover:bg-gray-900/60 hover:text-typography-primary md:px-6;*/
+  /*}*/
 }
