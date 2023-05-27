@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 
 import PortableText from "@components/PortableText";
 import SectionTitle from "@components/SectionTitle";
+import { urlFor } from "@lib/sanity.client";
 import { AboutSectionInfo } from "@types";
-
-import { urlFor } from "../../lib/sanity.client";
 
 interface AboutSectionProps {
   aboutInfo: AboutSectionInfo;
@@ -15,7 +14,7 @@ interface AboutSectionProps {
 
 function AboutSection({ aboutInfo }: AboutSectionProps) {
   return (
-    <section className="min-h-screen snap-start pt-16 pb-24 md:pt-24" id="about">
+    <section className="min-h-screen snap-start pb-24 pt-16 md:pt-24" id="about">
       <motion.div
         className="mx-auto flex max-w-7xl flex-col px-5 text-center md:px-10 lg:text-left"
         initial={{ opacity: 0 }}
@@ -36,8 +35,8 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
           />
 
           <div className="px-0 md:px-10">
-            <h3 className="typography-heading-4 mb-8 md:typography-heading-3">{aboutInfo.title}</h3>
-            <div className="typography-body-2 md:typography-body-1">
+            <h3 className="mb-8 typography-heading-4 md:typography-heading-3">{aboutInfo.title}</h3>
+            <div className="text-gray-200 typography-body-2 md:typography-body-1">
               <PortableText value={aboutInfo.description} />
             </div>
             <div className="mt-4">

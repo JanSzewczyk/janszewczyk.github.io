@@ -4,6 +4,7 @@ import React from "react";
 
 import Image from "next/image";
 
+import { Button } from "@szum-tech/design-system";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import BackgroundCircles from "@components/BackgroundCircles";
@@ -43,33 +44,33 @@ function HeroSection({ heroInfo }: HeroSectionProps) {
               />
             </div>
 
-            <h2 className="typography-subtitle-1 select-none uppercase text-typography-secondary md:typography-heading-6">
+            <h2 className="text-typography-secondary select-none uppercase typography-subtitle-1 md:typography-heading-6">
               {heroInfo.role}
             </h2>
           </div>
 
-          <h1 className="typography-heading-3 absolute top-8 max-w-3xl select-none px-8 md:typography-heading-2">
+          <h1 className="absolute top-8 max-w-3xl select-none px-8 typography-heading-3 md:typography-heading-2">
             {isCode ? (
-              <span className="typography-code text-2xl text-warning-500 md:text-3xl">{text}</span>
+              <span className="text-2xl text-warning-500 typography-code md:text-3xl">{text}</span>
             ) : (
               <span>{text}</span>
             )}
             <Cursor cursorColor="rgb(var(--primary-500))" />
           </h1>
         </div>
-        <div className="absolute bottom-2">
-          <a href="#about">
-            <button className="button-hero">About</button>
-          </a>
-          <a href="#experience">
-            <button className="button-hero">Experience</button>
-          </a>
-          <a href="#skills">
-            <button className="button-hero">Skills</button>
-          </a>
-          <a href="#projects">
-            <button className="button-hero">Projects</button>
-          </a>
+        <div className="absolute bottom-2 inline-flex gap-2">
+          <Button as="a" href="#about">
+            About
+          </Button>
+          <Button as="a" href="#experience">
+            Experience
+          </Button>
+          <Button as="a" href="#skills">
+            Skills
+          </Button>
+          <Button as="a" href="#projects">
+            Projects
+          </Button>
         </div>
       </div>
     </section>

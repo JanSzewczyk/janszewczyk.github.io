@@ -1,6 +1,7 @@
 "use client";
 
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import { Button, Input } from "@szum-tech/design-system";
 import { useForm } from "react-hook-form";
 
 import SectionTitle from "@components/SectionTitle";
@@ -30,11 +31,11 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
         <SectionTitle title="Contact" />
 
         <div className="flex flex-col gap-10">
-          <h3 className="typography-heading-4 text-center md:typography-heading-3">
+          <h3 className="text-center typography-heading-4 md:typography-heading-3">
             {contactInfo.title}
           </h3>
 
-          <div className="space-y-8">
+          <div className="space-y-8 text-gray-200">
             <a
               className="flex items-center justify-center gap-5"
               href={`tel:${contactInfo.phoneNumber.replaceAll(" ", "")}`}
@@ -57,42 +58,35 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
             </div>
           </div>
 
-          <form className="mx-auto flex w-full max-w-md flex-col gap-2">
-            <div className="flex flex-col gap-2 md:flex-row">
-              <input
-                type="text"
-                placeholder="Name"
-                className="contact-input"
-                {...register("name")}
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="contact-input"
-                {...register("email")}
-              />
+          <form className="mx-auto w-full max-w-md">
+            <div className="grid w-full grid-cols-2 gap-2">
+              <div className="col-span-2 md:col-span-1">
+                <Input type="text" placeholder="Name" {...register("name")} />
+              </div>
+              <div className="col-span-2 md:col-span-1">
+                <Input type="email" placeholder="Email" {...register("email")} />
+              </div>
+              <div className="col-span-2">
+                <Input type="text" placeholder="Subject" {...register("subject")} />
+              </div>
+              <div className="col-span-2">
+                <textarea
+                  placeholder="Message"
+                  className="contact-input h-40"
+                  {...register("message")}
+                />
+              </div>
             </div>
 
-            <input
-              type="text"
-              placeholder="Subject"
-              className="contact-input"
-              {...register("subject")}
-            />
-
-            <textarea
-              placeholder="Message"
-              className="contact-input h-40"
-              {...register("message")}
-            />
-
-            <button
+            <Button
+              block
+              size="lg"
+              variant="contained"
               onClick={handleSubmit(onSubmit)}
               type="submit"
-              className="rounded bg-primary-500 py-4 px-10 font-bold text-black hover:bg-primary-600 active:bg-primary-400"
             >
               Submit
-            </button>
+            </Button>
           </form>
         </div>
       </div>

@@ -12,7 +12,7 @@ interface HeaderProps {
 
 export default function Header({ headerInfo }: HeaderProps) {
   return (
-    <header className="sticky top-0	z-20 border-b border-gray-800 backdrop-blur-sm lg:border-none lg:backdrop-blur-none">
+    <header className="sticky	top-0 z-20 drop-shadow-xl backdrop-blur-sm lg:border-none lg:backdrop-blur-none">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
         <motion.div
           initial={{
@@ -34,7 +34,7 @@ export default function Header({ headerInfo }: HeaderProps) {
             <SocialIcon
               aria-label={social.title}
               bgColor="transparent"
-              fgColor="rgb(var(--gray-300))"
+              fgColor="rgb(var(--gray-200))"
               key={social._id}
               target="_blank"
               url={social.url}
@@ -57,10 +57,10 @@ export default function Header({ headerInfo }: HeaderProps) {
             transition={{
               duration: 1.5
             }}
-            className="flex cursor-pointer select-none flex-row items-center text-gray-300 hover:text-gray-300/80"
+            className="flex cursor-pointer select-none flex-row items-center text-gray-200 hover:text-gray-200/90"
           >
             <EnvelopeIcon className="h-7 w-7" />
-            <p className="typography-button hidden pl-2 md:inline-flex">
+            <p className="hidden pl-2 typography-button md:inline-flex">
               {headerInfo.contactLabel}
             </p>
           </motion.div>
