@@ -1,6 +1,6 @@
 "use client";
 
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import { IconMail } from "@szum-tech/design-system/icons";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 
@@ -12,7 +12,7 @@ interface HeaderProps {
 
 export default function Header({ headerInfo }: HeaderProps) {
   return (
-    <header className="sticky	top-0 z-20 drop-shadow-xl backdrop-blur-sm lg:border-none lg:backdrop-blur-none">
+    <header className="sticky	top-0 z-20 shadow-md drop-shadow-xl backdrop-blur-sm lg:border-none lg:shadow-none lg:backdrop-blur-none">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
         <motion.div
           initial={{
@@ -59,7 +59,7 @@ export default function Header({ headerInfo }: HeaderProps) {
             }}
             className="flex cursor-pointer select-none flex-row items-center text-gray-200 hover:text-gray-200/90"
           >
-            <EnvelopeIcon className="h-7 w-7" />
+            <IconMail className="h-6 w-6" />
             <p className="hidden pl-2 typography-button md:inline-flex">
               {headerInfo.contactLabel}
             </p>

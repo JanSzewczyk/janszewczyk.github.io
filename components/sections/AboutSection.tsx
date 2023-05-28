@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDownOnSquareIcon } from "@heroicons/react/24/solid";
+import { IconDownload } from "@szum-tech/design-system/icons";
 import { motion } from "framer-motion";
 
 import PortableText from "@components/PortableText";
@@ -46,7 +46,7 @@ function AboutSection({ aboutInfo }: AboutSectionProps) {
                   className="inline-flex font-bold text-primary-400 hover:text-primary-500"
                   href={`${aboutInfo.cv.asset.url}?dl=${aboutInfo.cv.asset.originalFilename}`}
                 >
-                  download my CV <ArrowDownOnSquareIcon className="ml-2 h-6 w-6" />
+                  download my CV <IconDownload className="ml-2 h-6 w-6" />
                 </a>
               </p>
             </div>

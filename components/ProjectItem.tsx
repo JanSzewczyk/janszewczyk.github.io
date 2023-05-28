@@ -15,7 +15,7 @@ interface ProjectItemProps {
   projectsAmount?: number;
 }
 
-function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProps) {
+export default function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProps) {
   return (
     <div className="project-item-width flex w-[calc(100vw-3rem)] flex-1 snap-center flex-col items-center md:w-[calc(100vw-5.5rem)] xl:w-300">
       <motion.img
@@ -67,5 +67,3 @@ function ProjectItem({ index = 0, project, projectsAmount = 1 }: ProjectItemProp
     </div>
   );
 }
-
-export default ProjectItem;

@@ -11,7 +11,7 @@ interface ExperienceCardProps {
   experience: Experience;
 }
 
-function ExperienceCard({ experience }: ExperienceCardProps) {
+export default function ExperienceCard({ experience }: ExperienceCardProps) {
   function formatDate(date: string): string {
     return new Date(date).toLocaleString("en-US", {
       timeZone: "UTC",
@@ -21,7 +21,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   }
 
   return (
-    <article className="flex w-[calc(100vw-3rem)] snap-center flex-col items-center overflow-y-auto rounded bg-app-primary bg-white p-4 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
+    <article className="flex w-[calc(100vw-3rem)] snap-center flex-col items-center overflow-y-auto rounded bg-app-primary p-4 transition-opacity duration-200 hover:opacity-100 sm:w-128 md:p-6 md:opacity-80 lg:p-10 lg:pb-6">
       <div className="mb-6">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
@@ -76,5 +76,3 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
     </article>
   );
 }
-
-export default ExperienceCard;
