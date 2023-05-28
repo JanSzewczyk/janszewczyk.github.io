@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.12.1...v1.13.0) (2023-05-28)
+
+
+### Bug Fixes
+
+* page info schema ([2d977cd](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/2d977cd08e41252daac9cfbf907ab80e179f9b35))
+* update design system ([6802655](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/6802655e453525852eb9149c06fb3fc266cf30b2))
+
+
+### Features
+
+* **design-system:** update design with new design system ([0301aef](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/0301aef4cb6d39f702c23717ed864eb01bcbece3))
+
 ## [1.12.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.12.0...v1.12.1) (2023-03-19)
 
 
