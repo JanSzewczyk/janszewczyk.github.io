@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function BackgroundCircles() {
+export default function BackgroundCircles() {
   return (
     <motion.div
       className="absolute flex items-center justify-center"
@@ -16,13 +16,11 @@ function BackgroundCircles() {
         duration: 2.5
       }}
     >
-      <div className="absolute h-[200px] w-[200px] animate-ping rounded-1/2 border border-gray-400" />
-      <div className="absolute h-[300px] w-[300px] animate-ping rounded-1/2 border border-gray-400" />
-      <div className="absolute h-[500px] w-[500px] animate-ping rounded-1/2 border border-gray-400" />
+      <div className="absolute h-[200px] w-[200px] animate-ping rounded-1/2 border border-gray-350" />
+      <div className="absolute h-[300px] w-[300px] animate-ping rounded-1/2 border border-gray-350" />
+      <div className="absolute h-[500px] w-[500px] animate-ping rounded-1/2 border border-gray-350" />
       <div className="absolute h-[650px] w-[650px] animate-pulse rounded-1/2 border border-primary-500" />
-      <div className="absolute h-[800px] w-[800px] rounded-1/2 border border-gray-400" />
+      <div className="absolute h-[800px] w-[800px] animate-pulse rounded-1/2 border border-gray-350/80" />
     </motion.div>
   );
 }
-
-export default BackgroundCircles;

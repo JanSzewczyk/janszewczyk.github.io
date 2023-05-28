@@ -25,7 +25,7 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
       >
         <SectionTitle title="Projects" />
 
-        <div className="scroll flex flex-1 snap-x snap-proximity overflow-x-auto pb-5 md:pb-10">
+        <div className="flex flex-1 snap-x snap-proximity overflow-x-auto pb-5 scroll md:pb-10">
           <div className="mx-auto flex flex-row gap-x-6">
             {projects.map((project, index) => (
               <ProjectItem

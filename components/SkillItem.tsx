@@ -13,7 +13,7 @@ interface SkillProps {
   skill: Skill;
 }
 
-function SkillItem({ index = 0, skill, rootRef }: SkillProps) {
+export default function SkillItem({ index = 0, skill, rootRef }: SkillProps) {
   return (
     <motion.div
       initial={{
@@ -36,11 +36,9 @@ function SkillItem({ index = 0, skill, rootRef }: SkillProps) {
 
       <div className="absolute z-0 h-full w-full rounded-lg opacity-0 transition duration-300 ease-in-out group-hover:bg-gray-400 group-hover:opacity-90">
         <div className="flex h-full items-center justify-center">
-          <p className="text-3xl font-bold text-white opacity-100">{skill.progress}%</p>
+          <p className="text-xl font-bold text-white opacity-100 md:text-3xl">{skill.progress}%</p>
         </div>
       </div>
     </motion.div>
   );
 }
-
-export default SkillItem;

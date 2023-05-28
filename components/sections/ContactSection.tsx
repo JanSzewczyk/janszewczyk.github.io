@@ -1,7 +1,7 @@
 "use client";
 
-import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
-import { Button, Input } from "@szum-tech/design-system";
+import { Button, Input, Textarea } from "@szum-tech/design-system";
+import { IconMail, IconMapPin, IconPhone, IconSend } from "@szum-tech/design-system/icons";
 import { useForm } from "react-hook-form";
 
 import SectionTitle from "@components/SectionTitle";
@@ -30,31 +30,33 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
       <div className="mx-auto flex max-w-7xl flex-1 flex-col px-5 md:px-10">
         <SectionTitle title="Contact" />
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-6 md:gap-10">
           <h3 className="text-center typography-heading-4 md:typography-heading-3">
             {contactInfo.title}
           </h3>
 
-          <div className="space-y-8 text-gray-200">
+          <div className="space-y-6 text-gray-200 md:space-y-8">
             <a
-              className="flex items-center justify-center gap-5"
+              className="flex items-center justify-center gap-2 md:gap-4"
               href={`tel:${contactInfo.phoneNumber.replaceAll(" ", "")}`}
             >
-              <PhoneIcon className="h-7 w-7 text-primary-500/80" />
-              <p className="typography-heading-6">{contactInfo.phoneNumber}</p>
+              <IconPhone className="h-5 w-5 text-primary-500/80 md:h-7 md:w-7" />
+              <p className="typography-subtitle-1 md:typography-heading-6">
+                {contactInfo.phoneNumber}
+              </p>
             </a>
 
             <a
-              className="flex items-center justify-center gap-5"
+              className="flex items-center justify-center gap-2 md:gap-4"
               href={`mailto:${contactInfo.email}`}
             >
-              <EnvelopeIcon className="h-7 w-7 text-primary-500/80" />
-              <p className="typography-heading-6">{contactInfo.email}</p>
+              <IconMail className="h-5 w-5 text-primary-500/80 md:h-7 md:w-7" />
+              <p className="typography-subtitle-1 md:typography-heading-6">{contactInfo.email}</p>
             </a>
 
-            <div className="flex items-center justify-center gap-5">
-              <MapPinIcon className="h-7 w-7 text-primary-500/80" />
-              <p className="typography-heading-6">{contactInfo.address}</p>
+            <div className="flex items-center justify-center gap-2 md:gap-4">
+              <IconMapPin className="h-5 w-5 text-primary-500/80 md:h-7 md:w-7" />
+              <p className="typography-subtitle-1 md:typography-heading-6">{contactInfo.address}</p>
             </div>
           </div>
 
@@ -70,23 +72,22 @@ function ContactSection({ contactInfo }: ContactSectionProps) {
                 <Input type="text" placeholder="Subject" {...register("subject")} />
               </div>
               <div className="col-span-2">
-                <textarea
-                  placeholder="Message"
-                  className="contact-input h-40"
-                  {...register("message")}
-                />
+                <Textarea placeholder="Message" {...register("message")} />
               </div>
             </div>
 
-            <Button
-              block
-              size="lg"
-              variant="contained"
-              onClick={handleSubmit(onSubmit)}
-              type="submit"
-            >
-              Submit
-            </Button>
+            <div className="mt-4">
+              <Button
+                block
+                size="lg"
+                variant="contained"
+                onClick={handleSubmit(onSubmit)}
+                type="submit"
+                endIcon={<IconSend />}
+              >
+                Submit
+              </Button>
+            </div>
           </form>
         </div>
       </div>

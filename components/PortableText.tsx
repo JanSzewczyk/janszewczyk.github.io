@@ -7,7 +7,7 @@ interface PortableTextProps {
   value?: PortableTextBlock[];
 }
 
-function PortableText({ value = [] }: PortableTextProps) {
+export default function PortableText({ value = [] }: PortableTextProps) {
   return (
     <PortableTextComponent
       value={value}
@@ -61,5 +61,3 @@ function PortableText({ value = [] }: PortableTextProps) {
     />
   );
 }
-
-export default PortableText;
