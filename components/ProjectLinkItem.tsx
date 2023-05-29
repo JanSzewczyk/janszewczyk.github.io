@@ -9,24 +9,21 @@ import {
 
 import { ProjectLink, ProjectLinkType } from "@types";
 
-const PROJECT_ICON_CONFIG: Record<
-  ProjectLinkType,
-  { label: string; icon: React.ElementType<HTMLElement> }
-> = {
+const PROJECT_ICON_CONFIG: Record<ProjectLinkType, { label: string; icon: React.ReactElement }> = {
   demo: {
-    icon: IconRocket,
+    icon: <IconRocket />,
     label: "Demo"
   },
   docs: {
-    icon: IconMail,
+    icon: <IconMail />,
     label: "Docs"
   },
   npm: {
-    icon: IconBrandNpm,
+    icon: <IconBrandNpm />,
     label: "Npm"
   },
   github: {
-    icon: IconBrandGithub,
+    icon: <IconBrandGithub />,
     label: "Repo"
   }
 };
@@ -38,7 +35,7 @@ type ProjectLinkItemProps = {
 export default function ProjectLinkItem({ projectLink }: ProjectLinkItemProps) {
   const config = PROJECT_ICON_CONFIG[projectLink.type];
 
-  const Icon = config.icon as React.ElementType<HTMLElement>;
+  const Icon = config.icon;
 
   return (
     <a
@@ -47,9 +44,7 @@ export default function ProjectLinkItem({ projectLink }: ProjectLinkItemProps) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      {/* TODO fix this later */}
-      {/* @ts-ignore*/}
-      <Icon className="h-4 w-4 md:h-6 md:w-6" />
+      {React.cloneElement(Icon, { className: "h-4 w-4 md:h-6 md:w-6" })}
       <span className="typography-body-1">{config.label}</span>
     </a>
   );

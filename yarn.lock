@@ -2601,12 +2601,13 @@
   dependencies:
     tslib "^2.4.0"
 
-"@szum-tech/design-system@^1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.12.2.tgz#51a9892bea97f56f6016b0458066c63c7cfad127"
-  integrity sha512-zZKNKVF4iW7qkNzTLo12aoug+G/UCcSk07qfCp+zPzOGGPJeRETgMroH4yXUFJqZ6TED+M3/58XF85IC3L1bhg==
+"@szum-tech/design-system@^1.12.3":
+  version "1.12.3"
+  resolved "https://registry.yarnpkg.com/@szum-tech/design-system/-/design-system-1.12.3.tgz#e36b26c8dfeaea53caee8a97036733c42f2e5c29"
+  integrity sha512-4WiFQPaXtzE4dHlfJfNKwd2DFS1Hezvq6nXHB7UeaS9GT57oudpxAoyv/9mXKOGpoaA2RGrcUF7qEYnDlrUVSQ==
   dependencies:
     "@radix-ui/react-tooltip" "^1.0.6"
+    "@tabler/icons-react" "^2.20.0"
     "@tailwindcss/container-queries" "^0.1.0"
     class-variance-authority "^0.6.0"
     tailwind-scrollbar "^3.0.4"
@@ -2630,6 +2631,19 @@
     "@semantic-release/github" "^8.0.7"
     "@semantic-release/npm" "^10.0.3"
     "@semantic-release/release-notes-generator" "^11.0.1"
+
+"@tabler/icons-react@^2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.20.0.tgz#419ff7e494dc287a2aadc431bcfa84b1fc371bde"
+  integrity sha512-r2uC0Mi3ozHD2G+IYi0A0Iy2203dbQo5EAFxn055MyIhH7U2VNsvyopTqOj+AVedy7cqR86T9zhryRUGC78WZA==
+  dependencies:
+    "@tabler/icons" "2.20.0"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.20.0.tgz#42a11bb91b9d347fdf6b296274cf68998122bb10"
+  integrity sha512-BsUEJoqREs8bqcrf5HfJBq6/rDvsRI3h+T+0X1o7i8LBHonsH0iAngcyL0I82YKoSy9NiVDvM3LV63zDP0nPYQ==
 
 "@tailwindcss/container-queries@^0.1.0":
   version "0.1.0"
