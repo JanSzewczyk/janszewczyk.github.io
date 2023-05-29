@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "node_modules/@szum-tech/design-system/**/*.js"
+    "./node_modules/@szum-tech/design-system/*.mjs"
   ],
   theme: {
     extend: {
