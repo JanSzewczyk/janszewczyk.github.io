@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.13.0...v1.13.1) (2023-05-29)
+
+
+### Bug Fixes
+
+* **styles:** fix tailwindcss configuration ([4475741](https://github.com/JanSzewczyk/janszewczyk.github.io/commit/44757415c7027f7930be99514473f7ea20a03d70))
+
 # [1.13.0](https://github.com/JanSzewczyk/janszewczyk.github.io/compare/v1.12.1...v1.13.0) (2023-05-28)
 
 
