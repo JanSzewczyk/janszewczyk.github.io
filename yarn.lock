@@ -2274,12 +2274,7 @@
     split2 "^4.1.0"
     throttle-debounce "^5.0.0"
 
-"@sanity/icons@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-2.2.2.tgz#678386dcd07ac481e456afd07f29be3c86c54c15"
-  integrity sha512-+Ks6LeYe44kjZSfcWFWj0zQRP48N3JisrZ9ia44QwG11y6bO9Wk8bfhu5o23FkyYrREu9CzQ0U+slSV7YsvcuQ==
-
-"@sanity/icons@^2.3.0":
+"@sanity/icons@^2.2.2", "@sanity/icons@^2.3.0":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-2.3.1.tgz#38e0e85095a2ae41c7e9836aa4e4dbf1905ac68f"
   integrity sha512-DyUdjjWFIokrMewnK24Vvxpv2lKx5LrzUM3eEk0ZVwhS8+hWkFFN1Z7jhcwQnQ5NweejhzsZkT4JHUdffCAQaw==
@@ -2439,10 +2434,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@^3.11.3":
-  version "3.11.3"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.11.3.tgz#29648addcfc7c31ea10cbef43ad01c864e4af298"
-  integrity sha512-Xuy6vuYt7KHAfZWLJlhKhTqhCd9kI45wVedw+DUmY5lN0XkMhVYm2nsFctf3A381YAZPJJECddlaH32fzrWcFg==
+"@sanity/vision@^3.11.5":
+  version "3.11.5"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.11.5.tgz#3be3c13c3a0eb9ccbad056b22b169423c5c4af29"
+  integrity sha512-loZY3XGmj+U6pYGdEOfWsGQWNF1B8/RskwsCtjHEE4ji1PCsmZxcYr+VaVZhp2khl2wkJRWdVA8mFdTQieWXwA==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"
