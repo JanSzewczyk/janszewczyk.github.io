@@ -37,7 +37,7 @@
     "@types/react-dom": "^18.2.4",
     "@types/semantic-release": "^20.0.1",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.41.0",
+    "eslint": "^8.46.0",
     "eslint-config-next": "^13.4.4",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
